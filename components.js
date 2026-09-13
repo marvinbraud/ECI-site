@@ -1,11 +1,11 @@
 /* ═══════════════════════════════════════════════════════
-   ECI — Shared Components (Header, Footer, Theme, Nav)
+   ECI · Shared Components (Header, Footer, Theme, Nav)
    ═══════════════════════════════════════════════════════ */
 
-// ── Logo helpers — transparent PNGs ──
+// ── Logo helpers · transparent PNGs ──
 // The full-lockup PNG is 2000×2000 with the "ESSEC [sail] ICI" content
 // centred in the canvas (~30% height, ~70% width). We wrap it in a
-// clipping container so only the live artwork shows — no dead whitespace.
+// clipping container so only the live artwork shows · no dead whitespace.
 function eciLogoFull(base) {
   return `<span class="eci-logo-full-wrap" aria-hidden="true">
     <img src="${base}logo-full-remove-bg-io.png" alt="ESSEC Capital Investments" class="eci-logo-full">
@@ -42,8 +42,11 @@ const NAV_ITEMS = [
   { label: 'Home',           href: 'index.html' },
   { label: 'About',          href: 'pages/about.html' },
   { label: 'Team',           href: 'pages/team.html' },
+  { label: 'Alumni',         href: 'pages/alumni.html' },
   { label: 'Pitches',        href: 'pages/pitches.html' },
   { label: 'Fund',           href: 'pages/fund.html' },
+  { label: 'Partners',       href: 'pages/partners.html' },
+  { label: 'Events',         href: 'pages/events.html' },
   { label: 'Join Us',        href: 'pages/join.html' },
   { label: 'Contact',        href: 'pages/contact.html' },
 ];
@@ -114,8 +117,10 @@ function renderFooter() {
             <li><a href="${base}index.html">Home</a></li>
             <li><a href="${base}pages/about.html">About ECI</a></li>
             <li><a href="${base}pages/team.html">The Team</a></li>
+            <li><a href="${base}pages/alumni.html">Alumni</a></li>
             <li><a href="${base}pages/pitches.html">Our Pitches</a></li>
             <li><a href="${base}pages/fund.html">Our Fund</a></li>
+            <li><a href="${base}pages/events.html">Events</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -124,6 +129,8 @@ function renderFooter() {
             <li><a href="${base}pages/join.html">Join Us</a></li>
             <li><a href="${base}pages/partners.html">Partners</a></li>
             <li><a href="${base}pages/contact.html">Contact</a></li>
+            <li><a href="${base}pages/strategy.html">Our Strategy</a></li>
+            <li><a href="${base}pages/resources.html">Resources</a></li>
           </ul>
         </div>
         <div class="footer-col">

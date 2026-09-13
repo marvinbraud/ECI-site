@@ -3,11 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Team — ECI</title>
-<meta name="description" content="Meet the leadership and members of ESSEC Capital Investments — 2025/2026.">
+<title>The Team | ECI</title>
+<meta name="description" content="Meet the leadership and members of ESSEC Capital Investments · 2025/2026.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Team | ECI">
+<meta property="og:description" content="Meet the leadership and members of ESSEC Capital Investments · 2025/2026.">
+<meta property="og:image" content="/logo-full-remove-bg-io.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Team | ECI">
+<meta name="twitter:description" content="Meet the leadership and members of ESSEC Capital Investments · 2025/2026.">
+<meta name="twitter:image" content="/logo-full-remove-bg-io.png">
 <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../base.css">
 <link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/png" href="../logo-icon-remove-bg-io.png">
 <style>
   .person-card__photo {
     display: flex;
@@ -89,6 +98,58 @@
     transition: color 0.15s;
   }
   .analyst-row__li:hover { color: var(--color-primary); }
+
+  /* ── Person-card centering ── */
+  .person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .person-card__bio {
+    max-width: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* ── Alumni company logo strip ── */
+  .alumni-logo-strip {
+    margin-bottom: var(--space-10);
+  }
+  .alumni-logo-track {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    justify-content: center;
+    align-items: center;
+  }
+  .alumni-logo-chip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--space-2) var(--space-4);
+    height: 64px;
+    min-width: 100px;
+    transition: box-shadow 0.2s, transform 0.2s;
+    text-decoration: none;
+  }
+  .alumni-logo-chip:hover {
+    box-shadow: 0 4px 18px rgba(17,61,99,0.13);
+    transform: translateY(-2px);
+  }
+  .alumni-logo-chip img {
+    height: 38px;
+    width: auto;
+    max-width: 130px;
+    object-fit: contain;
+    filter: grayscale(25%) opacity(0.85);
+    transition: filter 0.2s;
+  }
+  .alumni-logo-chip:hover img {
+    filter: grayscale(0%) opacity(1);
+  }
 </style>
 </head>
 <body>
@@ -98,7 +159,7 @@
   <section class="page-header">
     <p class="section-label" style="color:var(--color-accent);">Our People</p>
     <h1 class="page-header__title">The ECI Team</h1>
-    <p class="page-header__desc">28 ESSEC students united by a passion for investing — 2025/2026.</p>
+    <p class="page-header__desc">28 ESSEC students united by a passion for investing · 2025/2026.</p>
   </section>
 
   <!-- ── Bureau ── -->
@@ -159,7 +220,7 @@
   <section class="section" style="background:var(--color-surface-2);padding-top:var(--space-10);padding-bottom:var(--space-10);">
     <div class="container">
       <div class="text-center mb-8">
-        <p class="section-label">Investment Committee</p>
+        <p class="section-label">IC</p>
         <h2 class="section-title" style="margin-inline:auto;">Investment Committee</h2>
         <p class="section-desc" style="margin-inline:auto;">Senior members overseeing investment decisions and research quality.</p>
       </div>
@@ -334,7 +395,7 @@
         <div class="team-block">
           <div class="team-block__label">Utilities</div>
           <div class="team-block__head">
-            <div class="team-block__head-avatar" style="background:linear-gradient(135deg,#2a6e4a,#3a9e6a);">RD</div>
+            <div class="team-block__head-avatar" style="background:linear-gradient(135deg,#1d6a9c,var(--color-primary));">RD</div>
             <div>
               <div class="team-block__head-name">Rémy Durand</div>
               <div class="team-block__head-role">Head of Utilities</div>
@@ -428,6 +489,106 @@
     </div>
   </section>
 
+  <!-- ── Alumni ── -->
+  <section class="section" style="background:var(--color-surface-2);">
+    <div class="container">
+      <div class="text-center mb-12">
+        <p class="section-label">Where Our Alumni Went</p>
+        <h2 class="section-title" style="margin-inline:auto;">ECI Alumni</h2>
+        <p class="section-desc" style="margin-inline:auto;">Past members now working at leading institutions across finance, consulting, and tech.</p>
+      </div>
+
+      <!-- Alumni company logo pool -->
+      <div class="alumni-logo-strip fade-in">
+        <div class="alumni-logo-track">
+          <span class="alumni-logo-chip">
+            <img src="../alumni-logos/morgan-stanley.jpeg" alt="Morgan Stanley">
+          </span>
+          <span class="alumni-logo-chip">
+            <img src="../alumni-logos/sg.jpeg" alt="Société Générale CIB">
+          </span>
+          <span class="alumni-logo-chip">
+            <img src="../alumni-logos/houlihan-lokey.jpeg" alt="Houlihan Lokey">
+          </span>
+          <span class="alumni-logo-chip">
+            <img src="../alumni-logos/schroders.jpeg" alt="Schroders Capital">
+          </span>
+          <span class="alumni-logo-chip">
+            <img src="../alumni-logos/pai-partners.jpeg" alt="PAI Partners">
+          </span>
+          <span class="alumni-logo-chip">
+            <img src="../alumni-logos/five-arrows.jpeg" alt="Five Arrows · Rothschild &amp; Co">
+          </span>
+          <span class="alumni-logo-chip">
+            <img src="../alumni-logos/roland-berger.jpeg" alt="Roland Berger">
+          </span>
+          <span class="alumni-logo-chip">
+            <img src="../alumni-logos/bcg-inverto.jpeg" alt="BCG Inverto">
+          </span>
+          <span class="alumni-logo-chip">
+            <img src="../alumni-logos/kpmg.jpeg" alt="KPMG">
+          </span>
+          <span class="alumni-logo-chip">
+            <img src="../alumni-logos/loreal.jpeg" alt="L'Oréal">
+          </span>
+          <span class="alumni-logo-chip">
+            <img src="../alumni-logos/vinci.jpeg" alt="VINCI Energies">
+          </span>
+          <span class="alumni-logo-chip">
+            <img src="../alumni-logos/thales.jpeg" alt="Thales">
+          </span>
+          <span class="alumni-logo-chip">
+            <img src="../alumni-logos/oddo.jpeg" alt="ODDO BHF">
+          </span>
+        </div>
+      </div>
+
+      <div class="fade-in" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:var(--space-3);">
+
+        <div class="card" style="padding:var(--space-4) var(--space-5);">
+          <div style="font-family:var(--font-display);font-weight:700;font-size:var(--text-base);color:var(--color-text-primary);margin-bottom:2px;">Mohamed Faouzi Fradi</div>
+          <div style="font-size:var(--text-sm);font-weight:600;color:var(--color-primary);margin-bottom:var(--space-2);">Morgan Stanley · IBD</div>
+          <span class="tag">Investment Banking · London</span>
+        </div>
+
+        <div class="card" style="padding:var(--space-4) var(--space-5);">
+          <div style="font-family:var(--font-display);font-weight:700;font-size:var(--text-base);color:var(--color-text-primary);margin-bottom:2px;">Théophile Renault</div>
+          <div style="font-size:var(--text-sm);font-weight:600;color:var(--color-primary);margin-bottom:var(--space-2);">SGCIB · M&amp;A</div>
+          <span class="tag">Investment Banking · Paris</span>
+        </div>
+
+        <div class="card" style="padding:var(--space-4) var(--space-5);">
+          <div style="font-family:var(--font-display);font-weight:700;font-size:var(--text-base);color:var(--color-text-primary);margin-bottom:2px;">Nicole Jimenez Molina</div>
+          <div style="font-size:var(--text-sm);font-weight:600;color:var(--color-primary);margin-bottom:var(--space-2);">Houlihan Lokey · M&amp;A</div>
+          <span class="tag">Investment Banking · Paris</span>
+        </div>
+
+        <div class="card" style="padding:var(--space-4) var(--space-5);">
+          <div style="font-family:var(--font-display);font-weight:700;font-size:var(--text-base);color:var(--color-text-primary);margin-bottom:2px;">Mael Micoud</div>
+          <div style="font-size:var(--text-sm);font-weight:600;color:var(--color-primary);margin-bottom:var(--space-2);">PAI Partners · PE</div>
+          <span class="tag">Private Equity · Paris</span>
+        </div>
+
+        <div class="card" style="padding:var(--space-4) var(--space-5);">
+          <div style="font-family:var(--font-display);font-weight:700;font-size:var(--text-base);color:var(--color-text-primary);margin-bottom:2px;">Federico Malaspina</div>
+          <div style="font-size:var(--text-sm);font-weight:600;color:var(--color-primary);margin-bottom:var(--space-2);">Five Arrows · Rothschild &amp; Co</div>
+          <span class="tag">Private Equity · London</span>
+        </div>
+
+        <div class="card" style="padding:var(--space-4) var(--space-5);">
+          <div style="font-family:var(--font-display);font-weight:700;font-size:var(--text-base);color:var(--color-text-primary);margin-bottom:2px;">Tamim Hasan Matubbar</div>
+          <div style="font-size:var(--text-sm);font-weight:600;color:var(--color-primary);margin-bottom:var(--space-2);">Schroders Capital · PE</div>
+          <span class="tag">Private Equity · Zurich</span>
+        </div>
+
+      </div>
+
+      <div class="text-center fade-in" style="margin-top:var(--space-8);">
+        <a href="./alumni.html" class="btn btn--primary">View all 21 alumni &rarr;</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ── CTA ── -->
   <section class="section" style="background:var(--color-primary);color:var(--color-text-inverse);text-align:center;">
     <div class="container" style="max-width:var(--content-default);">
@@ -442,6 +603,6 @@
 
 </main>
 <div id="footer-slot"></div>
-<script src="../components.js?v=5"></script>
+<script src="../components.js?v=9"></script>
 </body>
 </html>

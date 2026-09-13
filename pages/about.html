@@ -3,161 +3,378 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About ECI — ESSEC Capital Investments</title>
-<meta name="description" content="Learn about ESSEC Capital Investments — our mission, what members learn, and how we operate.">
+<title>About ECI | ESSEC Capital Investments</title>
+<meta name="description" content="ESSEC Capital Investments · who we are, what we do, and what you learn.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About ECI | ESSEC Capital Investments">
+<meta property="og:description" content="ESSEC Capital Investments · who we are, what we do, and what you learn.">
+<meta property="og:image" content="/logo-full-remove-bg-io.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About ECI | ESSEC Capital Investments">
+<meta name="twitter:description" content="ESSEC Capital Investments · who we are, what we do, and what you learn.">
+<meta name="twitter:image" content="/logo-full-remove-bg-io.png">
 <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../base.css">
 <link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/png" href="../logo-icon-remove-bg-io.png">
+<style>
+/* ── Activity Cards ── */
+.activities {
+  padding: var(--space-20) 0;
+  background: var(--color-bg);
+}
+.activities__inner {
+  max-width: 1100px; margin-inline: auto;
+  padding-inline: var(--space-8);
+}
+.section-eyebrow {
+  font-size: var(--text-xs); font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase;
+  color: var(--color-accent); opacity: 0.7;
+  margin-bottom: var(--space-10);
+}
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1px;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+@media (max-width: 640px) { .activity-grid { grid-template-columns: 1fr; } }
+.activity-card {
+  background: var(--color-surface);
+  padding: var(--space-8);
+  display: flex; gap: var(--space-5); align-items: flex-start;
+  transition: background .2s;
+}
+.activity-card:hover { background: var(--color-surface-2); }
+.activity-card__num {
+  font-size: 11px; font-weight: 700;
+  color: var(--color-accent);
+  min-width: 24px;
+  padding-top: 3px;
+  letter-spacing: .06em;
+}
+.activity-card__title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-lg);
+  color: var(--color-primary);
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+.activity-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+.activity-card__tag {
+  display: inline-block;
+  margin-top: var(--space-3);
+  font-size: 10px; font-weight: 700;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--color-primary);
+  background: oklch(from var(--color-primary) l c h / 0.08);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+/* ── Skills ── */
+.skills {
+  padding: var(--space-20) 0;
+  background: var(--color-surface-2);
+}
+.skills__inner {
+  max-width: 1100px; margin-inline: auto;
+  padding-inline: var(--space-8);
+}
+.skills__layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+@media (max-width: 768px) { .skills__layout { grid-template-columns: 1fr; gap: var(--space-8); } }
+.skills__heading {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  color: var(--color-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  position: sticky;
+  top: 100px;
+}
+.skills__heading em {
+  font-style: italic;
+  color: var(--color-accent);
+}
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  padding: var(--space-5) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.skill-item:first-child { border-top: 1px solid var(--color-border); }
+.skill-item__tag {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: .10em; text-transform: uppercase;
+  color: var(--color-accent);
+  min-width: 80px;
+}
+.skill-item__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-base);
+  color: var(--color-primary);
+  flex: 1;
+}
+.skill-item__tools {
+  font-size: 10px;
+  color: var(--color-text-muted);
+  letter-spacing: .04em;
+}
+
+/* ── Sectors ── */
+.sectors {
+  padding: var(--space-16) 0;
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+.sectors__inner {
+  max-width: 1100px; margin-inline: auto;
+  padding-inline: var(--space-8);
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+}
+.sectors__label {
+  font-size: 10px; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+.sectors__chips {
+  display: flex; gap: var(--space-2); flex-wrap: wrap;
+}
+.sector-chip {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  color: var(--color-primary);
+  background: oklch(from var(--color-primary) l c h / 0.07);
+  border: 1px solid oklch(from var(--color-primary) l c h / 0.12);
+  padding: 8px 18px;
+  border-radius: 999px;
+  transition: background .2s, border-color .2s;
+}
+.sector-chip:hover {
+  background: oklch(from var(--color-primary) l c h / 0.12);
+  border-color: oklch(from var(--color-primary) l c h / 0.25);
+}
+
+/* ── Stats bar ── */
+.about-stats {
+  background: var(--color-primary);
+  padding: var(--space-14) 0;
+}
+.about-stats__inner {
+  max-width: 1100px; margin-inline: auto;
+  padding-inline: var(--space-8);
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1px;
+}
+@media (max-width: 640px) { .about-stats__inner { grid-template-columns: repeat(2,1fr); } }
+.about-stat {
+  padding: var(--space-6) var(--space-4);
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,0.06);
+}
+.about-stat:last-child { border-right: none; }
+.about-stat__val {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  color: #94b8d8;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.about-stat__lbl {
+  font-size: 10px; letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.35);
+}
+</style>
 </head>
 <body>
 <div id="header-slot"></div>
 <main id="main">
 
+  <!-- ── Standard page header ── -->
   <section class="page-header">
-    <p class="section-label" style="color:var(--color-accent);">About ECI</p>
-    <h1 class="page-header__title">ESSEC Capital Investments</h1>
-    <p class="page-header__desc">Building the next generation of investment professionals through hands-on equity research and rigorous financial training at ESSEC Business School.</p>
+    <p class="section-label" style="color:var(--color-accent);">ESSEC Business School · Paris</p>
+    <h1 class="page-header__title">We don't simulate.<br>We invest.</h1>
+    <p class="page-header__desc">ECI is a student-run investment association at ESSEC. Real research. A real portfolio. Real career preparation · from day one.</p>
   </section>
 
-  <!-- Mission & Vision -->
-  <section class="section">
-    <div class="container container--narrow">
-      <div class="grid-2" style="gap:var(--space-12);align-items:start;">
-        <div class="fade-in text-center">
-          <p class="section-label">Our Mission</p>
-          <h2 class="section-title">Bridging theory and practice</h2>
-          <p class="section-desc" style="margin-bottom:var(--space-4);">ECI exists to bridge the gap between academic finance and real-world investment practice. We believe every ESSEC student deserves access to rigorous financial training — regardless of prior experience.</p>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Our members develop the analytical rigour, professional communication, and collaborative mindset needed to succeed in equity research, investment banking, asset management, and related fields.</p>
-        </div>
-        <div class="fade-in text-center">
-          <p class="section-label">Our Vision</p>
-          <h2 class="section-title">Excellence in student investing</h2>
-          <p class="section-desc" style="margin-bottom:var(--space-4);">We aspire to be the leading student investment association at ESSEC — recognised for the quality of our research, the calibre of our members, and the strength of our alumni network in the financial industry.</p>
-          <ul style="font-size:var(--text-sm);color:var(--color-text-muted);list-style:none;display:flex;flex-direction:column;gap:var(--space-2);">
-            <li style="display:flex;align-items:flex-start;gap:var(--space-2);"><span style="color:var(--color-accent);font-weight:700;">—</span> Rigorous fundamental analysis on real companies</li>
-            <li style="display:flex;align-items:flex-start;gap:var(--space-2);"><span style="color:var(--color-accent);font-weight:700;">—</span> Five specialist research teams: TMT/FIG, Energy & Utilities, Defensive, Opportunities, and Portfolio Management</li>
-            <li style="display:flex;align-items:flex-start;gap:var(--space-2);"><span style="color:var(--color-accent);font-weight:700;">—</span> Collaborative, mentor-driven learning environment</li>
-            <li style="display:flex;align-items:flex-start;gap:var(--space-2);"><span style="color:var(--color-accent);font-weight:700;">—</span> Strong industry connections through AlumnEye</li>
-            <li style="display:flex;align-items:flex-start;gap:var(--space-2);"><span style="color:var(--color-accent);font-weight:700;">—</span> A real fund to manage as we grow</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- What members do -->
-  <section class="section" style="background:var(--color-surface-2);">
+  <!-- ── Three Pillars ── -->
+  <section class="section" style="background:var(--color-surface-2);padding-top:var(--space-12);padding-bottom:var(--space-12);">
     <div class="container">
-      <div class="text-center mb-12">
-        <p class="section-label">What We Do</p>
-        <h2 class="section-title" style="margin-inline:auto;">Core Activities</h2>
-        <p class="section-desc" style="margin-inline:auto;">ECI provides a comprehensive platform for developing investment skills through hands-on, real-world practice.</p>
+      <div class="grid-3 fade-in">
+
+        <div class="card" style="text-align:center;">
+          <div style="font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--color-accent);margin-bottom:var(--space-2);">01</div>
+          <h3 style="font-family:var(--font-display);font-weight:800;font-size:var(--text-lg);color:var(--color-primary);margin-bottom:var(--space-2);">Research</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.6;">Original equity research across 5 sector teams · DCF, comps, fundamental analysis.</p>
+        </div>
+
+        <div class="card" style="text-align:center;">
+          <div style="font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--color-accent);margin-bottom:var(--space-2);">02</div>
+          <h3 style="font-family:var(--font-display);font-weight:800;font-size:var(--text-lg);color:var(--color-primary);margin-bottom:var(--space-2);">Portfolio</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.6;">A real student-managed fund. Every position voted on after a formal pitch.</p>
+        </div>
+
+        <div class="card" style="text-align:center;">
+          <div style="font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--color-accent);margin-bottom:var(--space-2);">03</div>
+          <h3 style="font-family:var(--font-display);font-weight:800;font-size:var(--text-lg);color:var(--color-primary);margin-bottom:var(--space-2);">Training</h3>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);line-height:1.6;">AlumnEye ATP sessions · financial modelling, IB interviews, career preparation.</p>
+        </div>
+
       </div>
-      <div class="grid-4 fade-in">
-        <div class="card" style="text-align:center;">
-          <div style="width:48px;height:48px;margin:0 auto var(--space-3);border-radius:var(--radius-md);background:oklch(from var(--color-primary) l c h / 0.10);display:flex;align-items:center;justify-content:center;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+    </div>
+  </section>
+
+  <!-- ── What We Do ── -->
+  <section class="activities">
+    <div class="activities__inner">
+      <p class="section-eyebrow">What We Do</p>
+      <div class="activity-grid fade-in">
+
+        <div class="activity-card">
+          <span class="activity-card__num">01</span>
+          <div>
+            <div class="activity-card__title">Equity Research</div>
+            <p class="activity-card__desc">Fundamental analysis on real listed companies · income statements, balance sheets, DCF models, and comps.</p>
+            <span class="activity-card__tag">Buy · Hold · Sell</span>
           </div>
-          <h3 style="font-family:var(--font-display);font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);">Equity Research</h3>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Fundamental analysis covering financial statements, competitive positioning, and DCF / comps valuation across all major sectors.</p>
         </div>
-        <div class="card" style="text-align:center;">
-          <div style="width:48px;height:48px;margin:0 auto var(--space-3);border-radius:var(--radius-md);background:oklch(from var(--color-primary) l c h / 0.10);display:flex;align-items:center;justify-content:center;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+
+        <div class="activity-card">
+          <span class="activity-card__num">02</span>
+          <div>
+            <div class="activity-card__title">Weekly Pitch Sessions</div>
+            <p class="activity-card__desc">Present your thesis. Get challenged by the team. Refine it. Vote. Every week, throughout the academic year.</p>
+            <span class="activity-card__tag">Weekly · Peer Review</span>
           </div>
-          <h3 style="font-family:var(--font-display);font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);">Stock Pitches</h3>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Members present Buy / Hold / Sell recommendations backed by original financial models and published on LinkedIn for the finance community.</p>
         </div>
-        <div class="card" style="text-align:center;">
-          <div style="width:48px;height:48px;margin:0 auto var(--space-3);border-radius:var(--radius-md);background:oklch(from var(--color-primary) l c h / 0.10);display:flex;align-items:center;justify-content:center;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg>
+
+        <div class="activity-card">
+          <span class="activity-card__num">03</span>
+          <div>
+            <div class="activity-card__title">Portfolio Management</div>
+            <p class="activity-card__desc">Pitches that pass the vote enter the ECI Fund. Real capital, real position sizing, quarterly performance tracking.</p>
+            <span class="activity-card__tag">Real Fund · +6.83%</span>
           </div>
-          <h3 style="font-family:var(--font-display);font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);">Fund Management</h3>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Hands-on experience managing a real portfolio with disciplined investment process, position sizing, and quarterly performance reporting.</p>
         </div>
-        <div class="card" style="text-align:center;">
-          <div style="width:48px;height:48px;margin:0 auto var(--space-3);border-radius:var(--radius-md);background:oklch(from var(--color-primary) l c h / 0.10);display:flex;align-items:center;justify-content:center;">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+
+        <div class="activity-card">
+          <span class="activity-card__num">04</span>
+          <div>
+            <div class="activity-card__title">AlumnEye ATP</div>
+            <p class="activity-card__desc">3 structured sessions per year · DCF, LBO, pitch construction and mock technical interviews with finance professionals.</p>
+            <span class="activity-card__tag">AlumnEye · IB-Ready</span>
           </div>
-          <h3 style="font-family:var(--font-display);font-weight:700;font-size:var(--text-base);margin-bottom:var(--space-1);">ATP Training</h3>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Three AlumnEye-led Analyst Training Program sessions covering financial modelling, valuation, and professional pitch construction from day one.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section class="skills">
+    <div class="skills__inner">
+      <div class="skills__layout">
+        <div class="skills__heading fade-in">
+          What you<br><em>actually</em><br>learn.
+        </div>
+        <div class="skill-list fade-in">
+          <div class="skill-item">
+            <span class="skill-item__tag">Finance</span>
+            <span class="skill-item__name">Financial Statement Analysis</span>
+            <span class="skill-item__tools">P&L · Balance Sheet · Cash Flow</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-item__tag">Valuation</span>
+            <span class="skill-item__name">DCF & Comparable Analysis</span>
+            <span class="skill-item__tools">EV/EBITDA · P/E · Target Price</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-item__tag">Research</span>
+            <span class="skill-item__name">Pitch Construction</span>
+            <span class="skill-item__tools">Thesis · Catalysts · Risk</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-item__tag">Markets</span>
+            <span class="skill-item__name">Sector & Macro Analysis</span>
+            <span class="skill-item__tools">Industry Dynamics · KPIs</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-item__tag">Portfolio</span>
+            <span class="skill-item__name">Position Sizing & Risk Mgmt</span>
+            <span class="skill-item__tools">Allocation · Drawdown · Sharpe</span>
+          </div>
+          <div class="skill-item">
+            <span class="skill-item__tag">Career</span>
+            <span class="skill-item__name">IB / AM / PE Interview Prep</span>
+            <span class="skill-item__tools">Mock Interviews · CV Review</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- What you learn -->
-  <section class="section">
-    <div class="container container--narrow">
-      <div class="text-center mb-12">
-        <p class="section-label">For New Members</p>
-        <h2 class="section-title" style="margin-inline:auto;">What You Will Learn</h2>
-        <p class="section-desc" style="margin-inline:auto;">Whether you are a complete beginner or have finance experience, ECI structures your development.</p>
-      </div>
-      <div class="grid-2 fade-in">
-        <div class="timeline">
-          <div class="timeline__item">
-            <div class="timeline__title">Financial Statement Analysis</div>
-            <div class="timeline__desc">Read and interpret P&amp;L, balance sheet, and cash flow statements. Identify key drivers and red flags in company filings.</div>
-          </div>
-          <div class="timeline__item">
-            <div class="timeline__title">Valuation Techniques</div>
-            <div class="timeline__desc">Build DCF models, run trading comparables (EV/EBITDA, P/E), and triangulate target prices like a sell-side analyst.</div>
-          </div>
-          <div class="timeline__item">
-            <div class="timeline__title">Pitch Construction</div>
-            <div class="timeline__desc">Structure and present an investment thesis — investment highlights, risks, valuation, and recommendation — in professional format.</div>
-          </div>
-        </div>
-        <div class="timeline">
-          <div class="timeline__item">
-            <div class="timeline__title">Sector Knowledge</div>
-            <div class="timeline__desc">Deep-dive one or two sectors per year: understand industry dynamics, key metrics, and how macro conditions affect valuations.</div>
-          </div>
-          <div class="timeline__item">
-            <div class="timeline__title">Professional Communication</div>
-            <div class="timeline__desc">Publish equity research on LinkedIn, present in front of peers, and receive structured feedback from senior ECI members and AlumnEye coaches.</div>
-          </div>
-          <div class="timeline__item">
-            <div class="timeline__title">Portfolio Management</div>
-            <div class="timeline__desc">As the ECI fund grows, members gain direct experience in position sizing, portfolio construction, and performance attribution.</div>
-          </div>
-        </div>
+  <!-- ── Sector Teams ── -->
+  <section class="sectors">
+    <div class="sectors__inner">
+      <span class="sectors__label">5 Sector Teams</span>
+      <div class="sectors__chips">
+        <span class="sector-chip">TMT / FIG</span>
+        <span class="sector-chip">Energy &amp; Utilities</span>
+        <span class="sector-chip">Defensive</span>
+        <span class="sector-chip">Opportunities</span>
+        <span class="sector-chip">Portfolio Management</span>
       </div>
     </div>
   </section>
 
-  <!-- Stats -->
-  <section class="section" style="background:var(--color-primary);color:var(--color-text-inverse);">
-    <div class="container">
-      <div class="grid-4">
-        <div class="stat fade-in">
-          <div class="stat__value" style="color:var(--color-accent);">28</div>
-          <div class="stat__label" style="color:oklch(from var(--color-text-inverse) l c h / 0.7);">Active Members</div>
-        </div>
-        <div class="stat fade-in">
-          <div class="stat__value" style="color:var(--color-accent);">20+</div>
-          <div class="stat__label" style="color:oklch(from var(--color-text-inverse) l c h / 0.7);">Pitches Delivered</div>
-        </div>
-        <div class="stat fade-in">
-          <div class="stat__value" style="color:var(--color-accent);">5</div>
-          <div class="stat__label" style="color:oklch(from var(--color-text-inverse) l c h / 0.7);">Research Teams</div>
-        </div>
-        <div class="stat fade-in">
-          <div class="stat__value" style="color:var(--color-accent);">1</div>
-          <div class="stat__label" style="color:oklch(from var(--color-text-inverse) l c h / 0.7);">Official Partner</div>
-        </div>
-      </div>
+  <!-- ── Stats ── -->
+  <section class="about-stats">
+    <div class="about-stats__inner">
+      <div class="about-stat"><div class="about-stat__val">28</div><div class="about-stat__lbl">Members</div></div>
+      <div class="about-stat"><div class="about-stat__val">20+</div><div class="about-stat__lbl">Pitches</div></div>
+      <div class="about-stat"><div class="about-stat__val">+6.8%</div><div class="about-stat__lbl">Fund Return</div></div>
+      <div class="about-stat"><div class="about-stat__val">3</div><div class="about-stat__lbl">Partners</div></div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="section" style="text-align:center;">
+  <!-- ── CTA ── -->
+  <section class="section" style="background:var(--color-bg);text-align:center;">
     <div class="container" style="max-width:var(--content-default);">
-      <h2 style="font-family:var(--font-display);font-weight:800;font-size:var(--text-xl);margin-bottom:var(--space-3);">Ready to get started?</h2>
-      <p style="color:var(--color-text-muted);margin-bottom:var(--space-6);max-width:45ch;margin-inline:auto;">Applications for the 2025/2026 cohort are open. No prior finance experience required — just curiosity and commitment.</p>
+      <h2 style="font-family:var(--font-display);font-weight:800;font-size:var(--text-xl);color:var(--color-primary);margin-bottom:var(--space-3);">Applications open each September.</h2>
+      <p style="font-size:var(--text-base);color:var(--color-text-muted);margin-bottom:var(--space-8);">No prior experience required.</p>
       <div style="display:flex;justify-content:center;gap:var(--space-3);flex-wrap:wrap;">
-        <a href="./join.html" class="btn btn--primary btn--lg">Apply Now</a>
+        <a href="./join.html" class="btn btn--primary btn--lg">Apply to Join</a>
         <a href="./team.html" class="btn btn--secondary btn--lg">Meet the Team</a>
       </div>
     </div>
@@ -165,6 +382,6 @@
 
 </main>
 <div id="footer-slot"></div>
-<script src="../components.js?v=5"></script>
+<script src="../components.js?v=9"></script>
 </body>
 </html>

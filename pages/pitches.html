@@ -3,11 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Pitches — ECI</title>
+<title>Our Pitches | ECI</title>
 <meta name="description" content="Browse ESSEC Capital Investments' equity research pitches across Energy, Healthcare, Financials, Consumer, Industrials, and TMT.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Our Pitches | ECI">
+<meta property="og:description" content="Browse ESSEC Capital Investments' equity research pitches across Energy, Healthcare, Financials, Consumer, Industrials, and TMT.">
+<meta property="og:image" content="/logo-full-remove-bg-io.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Our Pitches | ECI">
+<meta name="twitter:description" content="Browse ESSEC Capital Investments' equity research pitches across Energy, Healthcare, Financials, Consumer, Industrials, and TMT.">
+<meta name="twitter:image" content="/logo-full-remove-bg-io.png">
 <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../base.css">
 <link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/png" href="../logo-icon-remove-bg-io.png">
 <style>
   /* ── PDF Modal ── */
   .pdf-modal-overlay {
@@ -113,7 +122,7 @@
   <section class="page-header">
     <p class="section-label" style="color:var(--color-accent);">Equity Research</p>
     <h1 class="page-header__title">Our Pitches</h1>
-    <p class="page-header__desc">Original fundamental analysis, rigorous valuation, and actionable investment recommendations — across every major sector. Click <em>View Pitch</em> to read the full research document.</p>
+    <p class="page-header__desc">Original fundamental analysis, rigorous valuation, and actionable investment recommendations · across every major sector. Click <em>View Pitch</em> to read the full research document.</p>
   </section>
 
   <!-- Filter + Gallery -->
@@ -135,13 +144,33 @@
       </div>
       <div class="grid-3" style="margin-bottom:var(--space-16);">
 
+        <div class="card card--hover pitch-card fade-in" data-sector="industrials"
+             data-pdf="../pitches/safran.pdf" data-pdf-title="Safran · Colville Investment Award">
+          <div class="pitch-card__header">
+            <div class="pitch-card__logo">SAF</div>
+            <div>
+              <div class="pitch-card__company">Safran</div>
+              <div class="pitch-card__sector">Aerospace &amp; Defense · EPA:SAF</div>
+            </div>
+          </div>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Colville Investment Award submission. Leading aerospace propulsion and equipment supplier positioned on the narrow-body aftermarket cycle.</p>
+          <div class="pitch-card__meta">
+            <span class="tag tag--buy">Buy</span>
+            <span>2025 · Colville Award</span>
+          </div>
+          <button class="pitch-card__pdf-btn" aria-label="Open pitch PDF">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            View Pitch
+          </button>
+        </div>
+
         <div class="card card--hover pitch-card fade-in" data-sector="consumer"
-             data-pdf="../pitches/walmart.pdf" data-pdf-title="Walmart — Buy">
+             data-pdf="../pitches/walmart.pdf" data-pdf-title="Walmart · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">WMT</div>
             <div>
               <div class="pitch-card__company">Walmart</div>
-              <div class="pitch-card__sector">Consumer Staples — Retail · NYSE:WMT</div>
+              <div class="pitch-card__sector">Consumer Staples · Retail · NYSE:WMT</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Dominant omnichannel retailer leveraging scale, private label expansion, and a fast-growing advertising segment to drive margin re-rating.</p>
@@ -156,12 +185,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="financials"
-             data-pdf="../pitches/bnp-paribas.pdf" data-pdf-title="BNP Paribas — Buy">
+             data-pdf="../pitches/bnp-paribas.pdf" data-pdf-title="BNP Paribas · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">BNP</div>
             <div>
               <div class="pitch-card__company">BNP Paribas</div>
-              <div class="pitch-card__sector">Financials — Universal Banking · EPA:BNP</div>
+              <div class="pitch-card__sector">Financials · Universal Banking · EPA:BNP</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Europe's leading universal bank with a diversified revenue mix. Attractive valuation, improving capital returns, and rate-cycle resilience support the thesis.</p>
@@ -176,12 +205,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="industrials"
-             data-pdf="../pitches/air-liquide.pdf" data-pdf-title="Air Liquide — Buy">
+             data-pdf="../pitches/air-liquide.pdf" data-pdf-title="Air Liquide · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">AI</div>
             <div>
               <div class="pitch-card__company">Air Liquide</div>
-              <div class="pitch-card__sector">Industrials — Specialty Gases · EPA:AI</div>
+              <div class="pitch-card__sector">Industrials · Specialty Gases · EPA:AI</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">World leader in industrial and medical gases with a structural growth story in green hydrogen and semiconductor gas supply.</p>
@@ -196,7 +225,7 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="consumer"
-             data-pdf="../pitches/coca-cola.pdf" data-pdf-title="Coca-Cola — Hold">
+             data-pdf="../pitches/coca-cola.pdf" data-pdf-title="Coca-Cola · Hold">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">KO</div>
             <div>
@@ -216,12 +245,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="consumer"
-             data-pdf="../pitches/lvmh.pdf" data-pdf-title="LVMH — Buy">
+             data-pdf="../pitches/lvmh.pdf" data-pdf-title="LVMH · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">MC</div>
             <div>
               <div class="pitch-card__company">LVMH</div>
-              <div class="pitch-card__sector">Consumer Discretionary — Luxury · EPA:MC</div>
+              <div class="pitch-card__sector">Consumer Discretionary · Luxury · EPA:MC</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">World's largest luxury conglomerate. Short-term China headwinds create an attractive entry point for a long-term compounder.</p>
@@ -241,10 +270,10 @@
             <div class="pitch-card__logo">HC</div>
             <div>
               <div class="pitch-card__company">Healthcare Sector Coverage</div>
-              <div class="pitch-card__sector">Healthcare — Pharma &amp; Biotech</div>
+              <div class="pitch-card__sector">Healthcare · Pharma &amp; Biotech</div>
             </div>
           </div>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Multi-stock sector analysis covering Sanofi, Bayer, Eli Lilly, and WuXi AppTec — mapping the post-COVID pharma landscape.</p>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Multi-stock sector analysis covering Sanofi, Bayer, Eli Lilly, and WuXi AppTec · mapping the post-COVID pharma landscape.</p>
           <div class="pitch-card__meta">
             <span class="tag">Sector</span>
             <span>Feb 2025 · ECI Research</span>
@@ -256,12 +285,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="financials"
-             data-pdf="../pitches/saudi-exchange.pdf" data-pdf-title="Saudi Exchange — Buy">
+             data-pdf="../pitches/saudi-exchange.pdf" data-pdf-title="Saudi Exchange · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">SASE</div>
             <div>
               <div class="pitch-card__company">Saudi Exchange</div>
-              <div class="pitch-card__sector">Financials — Stock Exchange · TADAWUL:SASE</div>
+              <div class="pitch-card__sector">Financials · Stock Exchange · TADAWUL:SASE</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Saudi Vision 2030 capital market reforms and surging IPO pipeline make SASE a high-conviction emerging markets exchange play.</p>
@@ -276,12 +305,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="energy"
-             data-pdf="../pitches/totalenergies.pdf" data-pdf-title="TotalEnergies — Buy">
+             data-pdf="../pitches/totalenergies.pdf" data-pdf-title="TotalEnergies · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">TTE</div>
             <div>
               <div class="pitch-card__company">TotalEnergies</div>
-              <div class="pitch-card__sector">Energy — Integrated Oil &amp; Gas · EPA:TTE</div>
+              <div class="pitch-card__sector">Energy · Integrated Oil &amp; Gas · EPA:TTE</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Best-in-class dividend and LNG strategy among European majors. Credible low-carbon transition with an attractive 5× P/E discount to US peers.</p>
@@ -297,12 +326,12 @@
 
 
         <div class="card card--hover pitch-card fade-in" data-sector="energy"
-             data-pdf="../pitches/halliburton.pdf" data-pdf-title="Halliburton — Buy">
+             data-pdf="../pitches/halliburton.pdf" data-pdf-title="Halliburton · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">HAL</div>
             <div>
               <div class="pitch-card__company">Halliburton</div>
-              <div class="pitch-card__sector">Energy — Oilfield Services · NYSE:HAL</div>
+              <div class="pitch-card__sector">Energy · Oilfield Services · NYSE:HAL</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">International upstream capex cycle drives OFS demand recovery. Halliburton's technology differentiation and margin expansion warrant a re-rating.</p>
@@ -317,12 +346,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="industrials"
-             data-pdf="../pitches/nexans.pdf" data-pdf-title="Nexans — Buy">
+             data-pdf="../pitches/nexans.pdf" data-pdf-title="Nexans · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">NXS</div>
             <div>
               <div class="pitch-card__company">Nexans</div>
-              <div class="pitch-card__sector">Industrials — Cables &amp; Connectivity · EPA:NEX</div>
+              <div class="pitch-card__sector">Industrials · Cables &amp; Connectivity · EPA:NEX</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Structural beneficiary of offshore wind and grid electrification megatrends. Order backlog growth and margin improvement support a Buy thesis.</p>
@@ -341,11 +370,11 @@
       <!-- ── Research In Progress ── -->
       <div style="margin-top:var(--space-12);margin-bottom:var(--space-4);">
         <p class="section-label">In Progress</p>
-        <h3 style="font-family:var(--font-display);font-weight:700;font-size:var(--text-base);color:var(--color-text-muted);margin-top:var(--space-1);">Research currently underway — coming soon</h3>
+        <h3 style="font-family:var(--font-display);font-weight:700;font-size:var(--text-base);color:var(--color-text-muted);margin-top:var(--space-1);">Research currently underway · coming soon</h3>
       </div>
       <div class="grid-3" style="margin-bottom:var(--space-16);">
 
-        <!-- Iran Research — In Progress -->
+        <!-- Iran Research · In Progress -->
         <div class="card pitch-card fade-in" data-sector="energy" style="opacity:0.65;position:relative;overflow:hidden;pointer-events:none;">
           <div style="position:absolute;top:12px;right:12px;">
             <span class="tag" style="background:var(--color-surface-2);color:var(--color-text-muted);font-size:10px;letter-spacing:.06em;padding:3px 8px;border-radius:999px;font-weight:700;">IN PROGRESS</span>
@@ -353,11 +382,11 @@
           <div class="pitch-card__header">
             <div class="pitch-card__logo" style="background:linear-gradient(135deg,#c8102e22,#c8102e44);color:#c8102e;">IR</div>
             <div>
-              <div class="pitch-card__company">Iran — Country Research</div>
-              <div class="pitch-card__sector">Energy &amp; Macro — Geopolitical Analysis</div>
+              <div class="pitch-card__company">Iran · Country Research</div>
+              <div class="pitch-card__sector">Energy &amp; Macro · Geopolitical Analysis</div>
             </div>
           </div>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Deep-dive into Iran's energy sector and macro outlook — sanctions dynamics, oil export capacity, and potential re-rating scenarios under diplomatic normalisation.</p>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Deep-dive into Iran's energy sector and macro outlook · sanctions dynamics, oil export capacity, and potential re-rating scenarios under diplomatic normalisation.</p>
           <div class="pitch-card__meta">
             <span class="tag">Research Paper</span>
             <span>2025/26 · ECI Research</span>
@@ -368,7 +397,7 @@
           </span>
         </div>
 
-        <!-- EV / Electric Vehicles Research — In Progress -->
+        <!-- EV / Electric Vehicles Research · In Progress -->
         <div class="card pitch-card fade-in" data-sector="technology" style="opacity:0.65;position:relative;overflow:hidden;pointer-events:none;">
           <div style="position:absolute;top:12px;right:12px;">
             <span class="tag" style="background:var(--color-surface-2);color:var(--color-text-muted);font-size:10px;letter-spacing:.06em;padding:3px 8px;border-radius:999px;font-weight:700;">IN PROGRESS</span>
@@ -376,11 +405,11 @@
           <div class="pitch-card__header">
             <div class="pitch-card__logo" style="background:linear-gradient(135deg,#22c55e22,#22c55e44);color:#16a34a;">EV</div>
             <div>
-              <div class="pitch-card__company">Electric Vehicles — Sector Research</div>
-              <div class="pitch-card__sector">Technology &amp; Industrials — Automotive / EV</div>
+              <div class="pitch-card__company">Electric Vehicles · Sector Research</div>
+              <div class="pitch-card__sector">Technology &amp; Industrials · Automotive / EV</div>
             </div>
           </div>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Comprehensive analysis of the global EV ecosystem — OEM competitive positioning, battery supply chain, charging infrastructure, and the China discount challenge for European players.</p>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Comprehensive analysis of the global EV ecosystem · OEM competitive positioning, battery supply chain, charging infrastructure, and the China discount challenge for European players.</p>
           <div class="pitch-card__meta">
             <span class="tag">Sector</span>
             <span>2025/26 · ECI Research</span>
@@ -400,12 +429,12 @@
       <div class="grid-3">
 
         <div class="card card--hover pitch-card fade-in" data-sector="healthcare"
-             data-pdf="../pitches/novo-nordisk.pdf" data-pdf-title="Novo Nordisk — Buy">
+             data-pdf="../pitches/novo-nordisk.pdf" data-pdf-title="Novo Nordisk · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">NOVO</div>
             <div>
               <div class="pitch-card__company">Novo Nordisk</div>
-              <div class="pitch-card__sector">Healthcare — Pharma · CPH:NOVO-B</div>
+              <div class="pitch-card__sector">Healthcare · Pharma · CPH:NOVO-B</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">GLP-1 market leadership with Ozempic and Wegovy. A once-in-a-generation obesity drug franchise with a decade-long growth runway.</p>
@@ -420,12 +449,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="technology"
-             data-pdf="../pitches/nvidia.pdf" data-pdf-title="Nvidia — Buy">
+             data-pdf="../pitches/nvidia.pdf" data-pdf-title="Nvidia · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">NVDA</div>
             <div>
               <div class="pitch-card__company">Nvidia</div>
-              <div class="pitch-card__sector">Technology — Semiconductors · NASDAQ:NVDA</div>
+              <div class="pitch-card__sector">Technology · Semiconductors · NASDAQ:NVDA</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Data centre GPU monopoly powering the AI infrastructure buildout. Dominant CUDA ecosystem creates unmatched switching costs.</p>
@@ -440,12 +469,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="financials"
-             data-pdf="../pitches/blackrock.pdf" data-pdf-title="BlackRock — Buy">
+             data-pdf="../pitches/blackrock.pdf" data-pdf-title="BlackRock · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">BLK</div>
             <div>
               <div class="pitch-card__company">BlackRock</div>
-              <div class="pitch-card__sector">Financials — Asset Management · NYSE:BLK</div>
+              <div class="pitch-card__sector">Financials · Asset Management · NYSE:BLK</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">World's largest asset manager with a structural ETF secular tailwind. AUM growth and fee resilience make BlackRock a durable compounder.</p>
@@ -460,12 +489,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="financials"
-             data-pdf="../pitches/amundi.pdf" data-pdf-title="Amundi — Buy">
+             data-pdf="../pitches/amundi.pdf" data-pdf-title="Amundi · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">AMUN</div>
             <div>
               <div class="pitch-card__company">Amundi</div>
-              <div class="pitch-card__sector">Financials — Asset Management · EPA:AMUN</div>
+              <div class="pitch-card__sector">Financials · Asset Management · EPA:AMUN</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Europe's largest asset manager trading at a discount to global peers. Cost discipline and ESG product expansion support earnings upgrades.</p>
@@ -480,12 +509,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="financials"
-             data-pdf="../pitches/goldman-sachs.pdf" data-pdf-title="Goldman Sachs — Buy">
+             data-pdf="../pitches/goldman-sachs.pdf" data-pdf-title="Goldman Sachs · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">GS</div>
             <div>
               <div class="pitch-card__company">Goldman Sachs</div>
-              <div class="pitch-card__sector">Financials — Investment Banking · NYSE:GS</div>
+              <div class="pitch-card__sector">Financials · Investment Banking · NYSE:GS</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">FICC and Advisory franchise rebounding in a rate-driven cycle. Consumer banking exit and capital return optionality provide earnings visibility.</p>
@@ -500,12 +529,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="industrials"
-             data-pdf="../pitches/delta-plus.pdf" data-pdf-title="Delta Plus Group — Buy">
+             data-pdf="../pitches/delta-plus.pdf" data-pdf-title="Delta Plus Group · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">ALDLT</div>
             <div>
               <div class="pitch-card__company">Delta Plus Group</div>
-              <div class="pitch-card__sector">Industrials — Safety Equipment · EPA:ALDLT</div>
+              <div class="pitch-card__sector">Industrials · Safety Equipment · EPA:ALDLT</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Niche PPE leader with strong regulatory tailwinds, international expansion, and a compelling small-cap valuation opportunity.</p>
@@ -520,12 +549,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="industrials"
-             data-pdf="../pitches/boeing.pdf" data-pdf-title="Boeing — Sell">
+             data-pdf="../pitches/boeing.pdf" data-pdf-title="Boeing · Sell">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">BA</div>
             <div>
               <div class="pitch-card__company">Boeing</div>
-              <div class="pitch-card__sector">Industrials — Aerospace · NYSE:BA</div>
+              <div class="pitch-card__sector">Industrials · Aerospace · NYSE:BA</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Deep operational and reputational challenges outweigh near-term recovery. Balance sheet repair and production normalisation are multi-year tasks.</p>
@@ -540,15 +569,15 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="energy"
-             data-pdf="../pitches/totalenergies-2024.pdf" data-pdf-title="TotalEnergies — Updated Analysis 2024">
+             data-pdf="../pitches/totalenergies-2024.pdf" data-pdf-title="TotalEnergies · Updated Analysis 2024">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">TTE</div>
             <div>
-              <div class="pitch-card__company">TotalEnergies — 2024</div>
-              <div class="pitch-card__sector">Energy — Integrated Oil &amp; Gas · EPA:TTE</div>
+              <div class="pitch-card__company">TotalEnergies · 2024</div>
+              <div class="pitch-card__sector">Energy · Integrated Oil &amp; Gas · EPA:TTE</div>
             </div>
           </div>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Updated equity research on TotalEnergies — revisiting the investment thesis, valuation, and capital allocation strategy in the context of 2024 results.</p>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Updated equity research on TotalEnergies · revisiting the investment thesis, valuation, and capital allocation strategy in the context of 2024 results.</p>
           <div class="pitch-card__meta">
             <span class="tag tag--buy">Buy</span>
             <span>2024 · ECI Research</span>
@@ -560,12 +589,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="energy"
-             data-pdf="../pitches/targa.pdf" data-pdf-title="Targa Resources — Buy">
+             data-pdf="../pitches/targa.pdf" data-pdf-title="Targa Resources · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">TRGP</div>
             <div>
               <div class="pitch-card__company">Targa Resources</div>
-              <div class="pitch-card__sector">Energy — Midstream Gas · NYSE:TRGP</div>
+              <div class="pitch-card__sector">Energy · Midstream Gas · NYSE:TRGP</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Permian Basin volume growth and fee-based cash flow model insulate Targa from commodity price volatility. Strong dividend growth outlook.</p>
@@ -580,12 +609,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="energy"
-             data-pdf="../pitches/bluenord.pdf" data-pdf-title="BlueNord ASA — Buy">
+             data-pdf="../pitches/bluenord.pdf" data-pdf-title="BlueNord ASA · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">BNOR</div>
             <div>
               <div class="pitch-card__company">BlueNord ASA</div>
-              <div class="pitch-card__sector">Energy — E&amp;P · OB:BNOR</div>
+              <div class="pitch-card__sector">Energy · E&amp;P · OB:BNOR</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Danish North Sea operator with a high-quality asset base, strong free cash flow generation, and an attractive dividend for an E&amp;P play.</p>
@@ -600,12 +629,12 @@
         </div>
 
         <div class="card card--hover pitch-card fade-in" data-sector="energy"
-             data-pdf="../pitches/iberdrola.pdf" data-pdf-title="Iberdrola — Buy">
+             data-pdf="../pitches/iberdrola.pdf" data-pdf-title="Iberdrola · Buy">
           <div class="pitch-card__header">
             <div class="pitch-card__logo">IBE</div>
             <div>
               <div class="pitch-card__company">Iberdrola</div>
-              <div class="pitch-card__sector">Energy — Utilities / Renewables · BME:IBE</div>
+              <div class="pitch-card__sector">Energy · Utilities / Renewables · BME:IBE</div>
             </div>
           </div>
           <p style="font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-3);">Europe's leading renewables utility with a €41bn investment plan. Regulatory visibility and green bond framework provide durable growth.</p>
@@ -652,7 +681,7 @@
   </div>
 </div>
 
-<script src="../components.js?v=5"></script>
+<script src="../components.js?v=9"></script>
 <script>
 (function () {
   // ── Sector filter ──

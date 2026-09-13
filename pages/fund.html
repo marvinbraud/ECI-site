@@ -3,11 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Our Fund — ECI</title>
-<meta name="description" content="Track the performance of the ESSEC Capital Investments student fund — live holdings, monthly returns, and benchmark comparison.">
+<title>Our Fund | ECI</title>
+<meta name="description" content="Track the performance of the ESSEC Capital Investments student fund · live holdings, monthly returns, and benchmark comparison.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Our Fund | ECI">
+<meta property="og:description" content="Track the performance of the ESSEC Capital Investments student fund · live holdings, monthly returns, and benchmark comparison.">
+<meta property="og:image" content="/logo-full-remove-bg-io.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Our Fund | ECI">
+<meta name="twitter:description" content="Track the performance of the ESSEC Capital Investments student fund · live holdings, monthly returns, and benchmark comparison.">
+<meta name="twitter:image" content="/logo-full-remove-bg-io.png">
 <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../base.css">
 <link rel="stylesheet" href="../style.css">
+<link rel="icon" type="image/png" href="../logo-icon-remove-bg-io.png">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
 /* ── Fund page extras ── */
@@ -151,7 +160,7 @@
   <section class="page-header">
     <p class="section-label" style="color:var(--color-accent);">Live Portfolio</p>
     <h1 class="page-header__title">The ECI Fund</h1>
-    <p class="page-header__desc">A real equity portfolio managed by ESSEC students — every position backed by formal research, presented and voted on by the full team.</p>
+    <p class="page-header__desc">A real equity portfolio managed by ESSEC students · every position backed by formal research, presented and voted on by the full team.</p>
   </section>
 
   <!-- ── KPI Cards ── -->
@@ -159,19 +168,19 @@
     <div class="container">
       <div class="kpi-grid fade-in">
         <div class="kpi-card">
-          <div class="kpi-card__value">€779.97</div>
+          <div class="kpi-card__value">€802.00</div>
           <div class="kpi-card__label">Portfolio NAV</div>
           <div class="kpi-card__sub">as of May 2026</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-card__value positive">+8.00%</div>
+          <div class="kpi-card__value positive">+6.83%</div>
           <div class="kpi-card__label">Cumulative Return</div>
           <div class="kpi-card__sub">since Oct 2025 inception</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-card__value positive">+2.22 pp</div>
+          <div class="kpi-card__value positive">+1.05 pp</div>
           <div class="kpi-card__label">vs MSCI World</div>
-          <div class="kpi-card__sub">+8.00% vs +5.78%</div>
+          <div class="kpi-card__sub">+6.83% vs +5.78%</div>
         </div>
         <div class="kpi-card">
           <div class="kpi-card__value">3</div>
@@ -190,7 +199,7 @@
         <!-- Cumulative Return line chart -->
         <div class="chart-card">
           <div class="chart-card__title">Cumulative Return</div>
-          <div class="chart-card__sub">ECI Fund vs MSCI World — indexed from inception (Oct 2025)</div>
+          <div class="chart-card__sub">ECI Fund vs MSCI World · indexed from inception (Oct 2025)</div>
           <canvas id="cumulChart" height="220"></canvas>
         </div>
 
@@ -234,17 +243,17 @@
                 <td>€132.00</td>
                 <td class="positive">+€28.20</td>
                 <td class="positive">+21.36%</td>
-                <td>31.91%</td>
+                <td>32.00%</td>
               </tr>
               <tr>
                 <td><span class="ticker-chip">MS</span>Morgan Stanley</td>
                 <td>1</td>
                 <td>$210.14</td>
-                <td>€196.05</td>
+                <td>€194.57</td>
                 <td>€174.79</td>
-                <td class="positive">+€21.27</td>
-                <td class="positive">+12.17%</td>
-                <td>39.05%</td>
+                <td class="positive">+€19.78</td>
+                <td class="positive">+11.32%</td>
+                <td>38.86%</td>
               </tr>
               <tr>
                 <td><span class="ticker-chip">KO</span>Coca-Cola</td>
@@ -254,16 +263,16 @@
                 <td>€146.80</td>
                 <td class="negative">−€0.94</td>
                 <td class="negative">−0.64%</td>
-                <td>29.05%</td>
+                <td>29.13%</td>
               </tr>
               <tr>
                 <td>Total</td>
-                <td>—</td>
-                <td>—</td>
-                <td>€502.10</td>
+                <td>·</td>
+                <td>·</td>
+                <td>€500.62</td>
                 <td>€453.58</td>
-                <td class="positive">+€48.52</td>
-                <td class="positive">+10.70%</td>
+                <td class="positive">+€47.04</td>
+                <td class="positive">+10.37%</td>
                 <td>100%</td>
               </tr>
             </tbody>
@@ -282,7 +291,7 @@
           <p class="section-label">About the Fund</p>
           <h2 class="section-title">How It Works</h2>
           <p class="section-desc" style="margin-bottom:var(--space-4);">The ECI Fund is a real equity portfolio managed collectively by ECI members following a disciplined investment process. Every investment decision is driven by the equity research produced in our weekly pitch sessions.</p>
-          <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Each position originates from a formal pitch presented and challenged by the full team. The fund gives members direct, accountable portfolio management experience — something very few student associations can offer.</p>
+          <p style="font-size:var(--text-sm);color:var(--color-text-muted);">Each position originates from a formal pitch presented and challenged by the full team. The fund gives members direct, accountable portfolio management experience · something very few student associations can offer.</p>
         </div>
         <div class="fade-in">
           <p class="section-label">Investment Process</p>
@@ -332,7 +341,7 @@
           <tbody>
             <tr>
               <td>Oct 2025</td>
-              <td>—</td>
+              <td>·</td>
               <td>0.00%</td>
               <td class="negative">−2.10%</td>
               <td class="positive">+2.10 pp</td>
@@ -347,49 +356,68 @@
             <tr>
               <td>Dec 2025</td>
               <td class="negative">−0.29%</td>
-              <td class="negative">−0.29%</td>
+              <td class="negative">−1.29%</td>
               <td class="negative">−1.02%</td>
-              <td class="positive">+0.73 pp</td>
+              <td class="negative">−0.27 pp</td>
             </tr>
             <tr>
               <td>Jan 2026</td>
               <td class="negative">−0.93%</td>
-              <td class="negative">−1.22%</td>
+              <td class="negative">−2.21%</td>
               <td class="positive">+2.14%</td>
-              <td class="negative">−3.36 pp</td>
+              <td class="negative">−4.35 pp</td>
             </tr>
             <tr>
               <td>Feb 2026</td>
               <td class="negative">−2.24%</td>
-              <td class="negative">−3.41%</td>
+              <td class="negative">−4.40%</td>
               <td class="positive">+0.71%</td>
-              <td class="negative">−4.12 pp</td>
+              <td class="negative">−5.11 pp</td>
             </tr>
             <tr>
               <td>Mar 2026</td>
               <td class="positive">+0.43%</td>
-              <td class="negative">−2.99%</td>
+              <td class="negative">−3.99%</td>
               <td class="negative">−2.81%</td>
-              <td class="positive">+0.18 pp</td>
+              <td class="negative">−1.18 pp</td>
             </tr>
             <tr>
               <td>Apr 2026</td>
               <td class="positive">+5.85%</td>
-              <td class="positive">+2.72%</td>
+              <td class="positive">+1.63%</td>
               <td class="positive">+1.17%</td>
-              <td class="positive">+1.55 pp</td>
+              <td class="positive">+0.46 pp</td>
             </tr>
             <tr>
               <td>May 2026</td>
               <td class="positive">+5.12%</td>
-              <td class="positive">+8.00%</td>
+              <td class="positive">+6.83%</td>
               <td class="positive">+5.78%</td>
-              <td class="positive">+2.22 pp</td>
+              <td class="positive">+1.05 pp</td>
             </tr>
           </tbody>
         </table>
-        <p class="updated-note">MSCI World (USD, net returns) used as benchmark · Data updated monthly</p>
+        <p class="updated-note">Benchmark: MSCI World Index (USD, net total return) · ECI returns are deposit-adjusted and time-weighted · FX: EUR/USD 1.08, IBKR statement rate as of May 2026 · Data updated monthly</p>
       </div>
+    </div>
+  </section>
+
+  <!-- ── Investment Philosophy teaser ── -->
+  <section class="section" style="background:var(--color-surface-2);">
+    <div class="container" style="max-width:var(--content-default);text-align:center;">
+      <p class="section-label">How We Invest</p>
+      <h2 class="section-title" style="margin-inline:auto;">Behind the numbers: our investment philosophy</h2>
+      <p class="section-desc" style="margin-inline:auto;margin-bottom:var(--space-6);">Every position in the fund follows the same discipline: fundamental research, a formal pitch, and a full-team vote. Read how we select, size, and monitor our investments.</p>
+      <a href="./strategy.html" class="btn btn--secondary">Read Our Strategy</a>
+    </div>
+  </section>
+
+  <!-- ── Disclaimer ── -->
+  <section style="padding:var(--space-8) 0;border-top:1px solid var(--color-border);">
+    <div class="container" style="max-width:var(--content-default);">
+      <p style="font-size:var(--text-xs);color:var(--color-text-muted);line-height:1.7;">
+        <strong>Important information.</strong> The ECI Fund is a student-managed educational portfolio operated by ESSEC Capital Investments, a student association at ESSEC Business School. It is not a regulated investment vehicle, is not open to outside investors, and nothing on this page constitutes investment advice, a recommendation, or an offer to buy or sell any security. Past performance is not indicative of future results. Returns are calculated internally on a deposit-adjusted, time-weighted basis and have not been independently audited. Benchmark data: MSCI World Index (USD, net total return).
+      </p>
     </div>
   </section>
 
@@ -407,20 +435,20 @@
 
 </main>
 <div id="footer-slot"></div>
-<script src="../components.js?v=5"></script>
+<script src="../components.js?v=9"></script>
 <script>
 /* ═══════════════════════════════════════════════
-   ECI FUND DASHBOARD — DATA
+   ECI FUND DASHBOARD · DATA
    Update this block each month end.
    Add a new entry to each array in chronological order.
    ═══════════════════════════════════════════════ */
 const FUND_DATA = {
   labels: ['Oct 2025','Nov 2025','Dec 2025','Jan 2026','Feb 2026','Mar 2026','Apr 2026','May 2026'],
 
-  // Deposit-adjusted cumulative returns (%) — ECI Fund
-  eciCumulative: [0.00, -1.00, -0.29, -1.22, -3.41, -2.99, 2.72, 8.00],
+  // Deposit-adjusted cumulative returns (%) · ECI Fund
+  eciCumulative: [0.00, -1.00, -1.29, -2.21, -4.40, -3.99, 1.63, 6.83],
 
-  // MSCI World cumulative (%) — computed from monthly period returns
+  // MSCI World cumulative (%) · computed from monthly period returns
   msciCumulative: [-2.10, 1.62, -1.02, 2.14, 0.71, -2.81, 1.17, 5.78],
 
   // ECI monthly period returns (%)
@@ -429,7 +457,7 @@ const FUND_DATA = {
 
 /* ── Shared chart theme ── */
 const ROOT = getComputedStyle(document.documentElement);
-const C_ACCENT  = '#c9a84c';
+const C_ACCENT  = '#5e7c9e';
 const C_MUTED   = 'rgba(120,130,150,0.7)';
 const C_GRID    = 'rgba(150,160,170,0.12)';
 const C_TEXT    = ROOT.getPropertyValue('--color-text-muted').trim() || '#888';

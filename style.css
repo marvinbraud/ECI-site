@@ -1,7 +1,8 @@
 /* ═══════════════════════════════════════════════════════
-   ECI — Equity Club Investments
+   ECI · ESSEC Capital Investments
    Design Tokens + Component Styles
    ═══════════════════════════════════════════════════════ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap');
 
 /* ── Type Scale ── */
 :root {
@@ -41,13 +42,13 @@
 /* ── Color Palette — ESSEC Capital Investments Brand ── */
 /* Brand colors: rgb(204,209,215) · rgb(72,80,89) · rgb(94,124,158) · rgb(17,61,99) */
 :root, [data-theme="light"] {
-  --color-bg:             #f4f6f9;
+  --color-bg:             #f7f6f2;
   --color-surface:        #ffffff;
-  --color-surface-2:      #f8f9fb;
-  --color-surface-offset: #eaecf0;
-  --color-surface-dynamic: #dde1e8;
-  --color-divider:        #ccd1d7;
-  --color-border:         #b8c0cc;
+  --color-surface-2:      #f3f2ed;
+  --color-surface-offset: #eae8e1;
+  --color-surface-dynamic: #dedbd2;
+  --color-divider:        #d6d3ca;
+  --color-border:         #bfbcb1;
 
   --color-text:           #0e1a28;
   --color-text-muted:     #485059;
@@ -63,15 +64,20 @@
   --color-accent-hover:   #4a6a8a;
   --color-accent-active:  #3a5a7a;
 
+  --color-bronze:         #8c6f42;
+  --color-bronze-light:   #c9b585;
+
   --color-error:          #b93a3a;
   --color-warning:        #c87e2e;
   --color-success:        #2e8a4e;
-  
-  --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.625rem;
   --radius-full: 9999px;
+
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
   
   --transition-interactive: 180ms cubic-bezier(0.16, 1, 0.3, 1);
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
@@ -109,6 +115,9 @@
   --color-accent:         #94b8d8;
   --color-accent-hover:   #aacce8;
   --color-accent-active:  #bcd8f0;
+
+  --color-bronze:         #c0a878;
+  --color-bronze-light:   #d4c298;
 
   --color-error:          #e06060;
   --color-warning:        #d4923a;
@@ -209,19 +218,20 @@
    Show the center ~47% of the image height so content is
    always fully visible regardless of exact canvas margins.
    Change --logo-img-w to resize everything. */
-/* Logo: render image at 160px wide → content zone (30%×70%) = 48px tall × 112px wide.
-   Container clips to 48px height, centered. No content ever cut. */
+/* Logo: MEASURED content at 31.7%-68.4% height, 36%-64% width of 2000×2000 canvas.
+   Render at 158px → container 63×60px shows exactly the content zone + margin. */
 .eci-logo-full-wrap {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  height: 48px;
+  width: 63px;
+  height: 60px;
   overflow: hidden;
 }
 .eci-logo-full {
-  width: 160px;
-  height: auto;   /* = 160px square → shows center 48px = 30% = content zone */
+  width: 158px;
+  height: auto;  /* = 158px square */
   flex-shrink: 0;
 }
 
@@ -415,7 +425,7 @@
   padding: var(--space-1) var(--space-3);
   font-size: var(--text-xs);
   font-weight: 600;
-  border-radius: var(--radius-full);
+  border-radius: var(--radius-sm);
   background: oklch(from var(--color-primary) l c h / 0.1);
   color: var(--color-primary);
 }
@@ -429,15 +439,20 @@
   font-size: var(--text-xs);
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-accent);
+  letter-spacing: 0.12em;
+  color: var(--color-bronze);
   margin-bottom: var(--space-3);
+}
+.text-center .section-label {
+  margin-inline: auto;
+  text-align: center;
 }
 
 .section-title {
-  font-family: var(--font-display);
+  font-family: var(--font-serif);
   font-size: var(--text-xl);
-  font-weight: 800;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   color: var(--color-text);
   margin-bottom: var(--space-2);
 }
@@ -885,18 +900,28 @@
 .page-header {
   background: var(--color-primary);
   color: var(--color-text-inverse);
-  padding: var(--space-16) var(--space-4) var(--space-12);
+  padding: var(--space-16) var(--space-6) var(--space-12);
   text-align: center;
+}
+@media (min-width: 768px) {
+  .page-header { padding-inline: var(--space-12); }
 }
 [data-theme="dark"] .page-header {
   background: linear-gradient(135deg, #0e1218, #1a2240);
   color: var(--color-text);
 }
+.page-header .section-label {
+  display: block;
+  margin-inline: auto;
+  color: var(--color-bronze-light) !important;
+}
 .page-header__title {
-  font-family: var(--font-display);
+  font-family: var(--font-serif);
   font-size: var(--text-2xl);
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: var(--space-2);
+  max-width: 24ch;
+  margin-inline: auto;
 }
 .page-header__desc {
   font-size: var(--text-base);

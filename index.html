@@ -3,10 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ECI — ESSEC Capital Investments</title>
-<meta name="description" content="ESSEC Capital Investments — the student-led investment association at ESSEC Business School dedicated to equity research, portfolio management, and financial education.">
-<meta property="og:title" content="ECI — ESSEC Capital Investments">
+<title>ECI | ESSEC Capital Investments</title>
+<meta name="description" content="ESSEC Capital Investments · the student-led investment association at ESSEC Business School dedicated to equity research, portfolio management, and financial education.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ECI | ESSEC Capital Investments">
 <meta property="og:description" content="Student-led investment association at ESSEC Business School dedicated to equity research and financial education.">
+<meta property="og:image" content="/logo-full-remove-bg-io.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ECI | ESSEC Capital Investments">
+<meta name="twitter:description" content="Student-led investment association at ESSEC Business School dedicated to equity research and financial education.">
+<meta name="twitter:image" content="/logo-full-remove-bg-io.png">
 
 <!-- Fonts -->
 <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800&f[]=satoshi@300,400,500,700&display=swap" rel="stylesheet">
@@ -16,13 +22,13 @@
 
 <style>
 /* ══════════════════════════════════════════════
-   CINEMATIC HOMEPAGE — ECI Digital Instrument
+   CINEMATIC HOMEPAGE · ECI Digital Instrument
    ══════════════════════════════════════════════ */
 
-/* ── Token overrides for gold accent ── */
+/* ── Token overrides for brand accent ── */
 :root {
-  --eci-gold: #c9a84c;
-  --eci-gold-light: rgba(201,168,76,0.12);
+  --eci-gold: #94b8d8;
+  --eci-gold-light: rgba(148,184,216,0.12);
   --eci-navy: #113d63;
   --eci-dark: #0e1a28;
   --eci-cream: #f4f6f9;
@@ -191,9 +197,9 @@
 .btn-magnetic--gold {
   background: var(--eci-gold);
   color: var(--eci-dark);
-  box-shadow: 0 4px 24px rgba(201,168,76,0.35);
+  box-shadow: 0 4px 24px rgba(148,184,216,0.35);
 }
-.btn-magnetic--gold:hover { box-shadow: 0 8px 40px rgba(201,168,76,0.50); }
+.btn-magnetic--gold:hover { box-shadow: 0 8px 40px rgba(148,184,216,0.50); }
 .btn-magnetic--outline {
   background: transparent;
   color: rgba(255,255,255,0.85);
@@ -213,7 +219,7 @@
 }
 .hero-scroll__line {
   width: 1px; height: 48px;
-  background: linear-gradient(to bottom, rgba(201,168,76,0.8), transparent);
+  background: linear-gradient(to bottom, rgba(148,184,216,0.8), transparent);
   animation: scrollPulse 2s ease-in-out infinite;
 }
 @keyframes scrollPulse { 0%,100%{opacity:0.4;transform:scaleY(1)} 50%{opacity:1;transform:scaleY(1.2)} }
@@ -221,7 +227,7 @@
   font-family: var(--jb);
   font-size: 9px; letter-spacing: .18em;
   text-transform: uppercase;
-  color: rgba(201,168,76,0.7);
+  color: rgba(148,184,216,0.7);
   writing-mode: vertical-rl;
 }
 
@@ -250,8 +256,8 @@
 }
 .quick-nav__link:hover {
   color: var(--eci-gold);
-  border-color: rgba(201,168,76,0.35);
-  background: rgba(201,168,76,0.06);
+  border-color: rgba(148,184,216,0.35);
+  background: rgba(148,184,216,0.06);
 }
 .quick-nav__sep { color: rgba(255,255,255,0.12); font-size: 12px; }
 
@@ -361,7 +367,7 @@
   margin-bottom: var(--space-6);
 }
 
-/* Card 1 — Shuffler */
+/* Card 1 · Shuffler */
 .shuffler-wrap {
   position: relative;
   height: 88px;
@@ -369,7 +375,7 @@
 }
 .shuffler-item {
   position: absolute; width: 100%;
-  background: linear-gradient(135deg, rgba(17,61,99,0.06), rgba(201,168,76,0.06));
+  background: linear-gradient(135deg, rgba(17,61,99,0.06), rgba(148,184,216,0.06));
   border: 1px solid rgba(17,61,99,0.10);
   border-radius: 1rem;
   padding: var(--space-3) var(--space-4);
@@ -387,7 +393,7 @@
   letter-spacing: .04em; margin-top: 2px;
 }
 
-/* Card 2 — Typewriter */
+/* Card 2 · Typewriter */
 .live-feed {
   background: var(--eci-dark);
   border-radius: 1rem;
@@ -426,7 +432,7 @@
 }
 @keyframes cursorBlink { 0%,100%{opacity:1} 50%{opacity:0} }
 
-/* Card 3 — Scheduler */
+/* Card 3 · Scheduler */
 .week-grid {
   display: grid;
   grid-template-columns: repeat(7,1fr);
@@ -500,8 +506,6 @@
 @media (min-width: 768px) { .philosophy-cinema__inner { padding-inline: var(--space-12); } }
 .philosophy-line {
   display: block;
-  opacity: 0;
-  transform: translateY(50px);
 }
 .philosophy-line--small {
   font-family: var(--font-display);
@@ -651,7 +655,7 @@
 .linkedin-cta::before {
   content: '';
   position: absolute; inset: 0;
-  background: radial-gradient(ellipse 80% 60% at 50% 120%, rgba(201,168,76,0.10) 0%, transparent 70%);
+  background: radial-gradient(ellipse 80% 60% at 50% 120%, rgba(148,184,216,0.10) 0%, transparent 70%);
 }
 .linkedin-cta__inner { position: relative; z-index: 2; max-width: 680px; margin-inline: auto; padding-inline: var(--space-6); }
 .linkedin-cta__eyebrow {
@@ -664,7 +668,7 @@
 .linkedin-cta__eyebrow::before,
 .linkedin-cta__eyebrow::after {
   content: ''; flex: 1; max-width: 60px;
-  height: 1px; background: rgba(201,168,76,0.4);
+  height: 1px; background: rgba(148,184,216,0.4);
 }
 .linkedin-cta__title {
   font-family: var(--pf);
@@ -693,11 +697,11 @@
   text-decoration: none;
   transition: transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94),
               box-shadow 0.35s cubic-bezier(0.25,0.46,0.45,0.94);
-  box-shadow: 0 4px 32px rgba(201,168,76,0.30);
+  box-shadow: 0 4px 32px rgba(148,184,216,0.30);
 }
 .btn-linkedin:hover {
   transform: scale(1.04) translateY(-2px);
-  box-shadow: 0 12px 48px rgba(201,168,76,0.48);
+  box-shadow: 0 12px 48px rgba(148,184,216,0.48);
 }
 
 /* ── System Operational Footer Bar ── */
@@ -755,6 +759,7 @@
   .stat-cinema { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
 }
 </style>
+<link rel="icon" type="image/png" href="logo-icon-remove-bg-io.png">
 </head>
 <body>
 
@@ -772,7 +777,7 @@
 <main id="main">
 
   <!-- ═══════════════════════════════════════
-       HERO — The Opening Shot
+       HERO · The Opening Shot
        ═══════════════════════════════════════ -->
   <section class="hero-cinema" id="hero-cinema">
     <div class="hero-cinema__bg" id="hero-bg"></div>
@@ -782,7 +787,7 @@
         <span class="hero-title-sans" id="h-sans">Where Research</span>
         <span class="hero-title-serif" id="h-serif">Meets Reality.</span>
       </h1>
-      <p class="hero-subtitle" id="h-sub">ESSEC Capital Investments trains the next generation of investment professionals — through original equity research, a real student-managed portfolio, and AlumnEye-backed career preparation.</p>
+      <p class="hero-subtitle" id="h-sub">ESSEC Capital Investments trains the next generation of investment professionals · through original equity research, a real student-managed portfolio, and AlumnEye-backed career preparation.</p>
       <div class="hero-actions" id="h-actions">
         <a href="./pages/join.html" class="btn-magnetic btn-magnetic--gold">
           <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
@@ -826,7 +831,7 @@
         <div class="stat-cinema__lbl">Pitches Published</div>
       </div>
       <div class="stat-cinema">
-        <div class="stat-cinema__val">+8%</div>
+        <div class="stat-cinema__val">+6.8%</div>
         <div class="stat-cinema__lbl">Fund Return</div>
       </div>
       <div class="stat-cinema">
@@ -837,7 +842,7 @@
   </section>
 
   <!-- ═══════════════════════════════════════
-       FEATURE CARDS — Interactive Artifacts
+       FEATURE CARDS · Interactive Artifacts
        ═══════════════════════════════════════ -->
   <section class="features-cinema">
     <div class="features-cinema__inner">
@@ -847,11 +852,11 @@
       </div>
       <div class="features-grid">
 
-        <!-- Card 1 — Research Shuffler -->
+        <!-- Card 1 · Research Shuffler -->
         <div class="feature-card" id="fc-shuffler">
-          <div class="fc-label">01 — Research</div>
+          <div class="fc-label">01 · Research</div>
           <h3 class="fc-title">5 Sector Teams. One Standard.</h3>
-          <p class="fc-desc">Original fundamental analysis across every major sector — from Energy to Financials, TMT to Healthcare.</p>
+          <p class="fc-desc">Original fundamental analysis across every major sector · from Energy to Financials, TMT to Healthcare.</p>
           <div class="shuffler-wrap">
             <div class="shuffler-item" id="sh-0">
               <span class="shuffler-item__name">TMT / FIG</span>
@@ -868,11 +873,11 @@
           </div>
         </div>
 
-        <!-- Card 2 — Portfolio Typewriter -->
+        <!-- Card 2 · Portfolio Typewriter -->
         <div class="feature-card" id="fc-typewriter">
-          <div class="fc-label">02 — Portfolio</div>
+          <div class="fc-label">02 · Portfolio</div>
           <h3 class="fc-title">Real Capital. Real Decisions.</h3>
-          <p class="fc-desc">Every position in the ECI Fund was voted on by the team after formal pitch review — no simulation.</p>
+          <p class="fc-desc">Every position in the ECI Fund was voted on by the team after formal pitch review · no simulation.</p>
           <div class="live-feed">
             <div class="live-feed__header">
               <span class="live-dot"></span>
@@ -882,11 +887,11 @@
           </div>
         </div>
 
-        <!-- Card 3 — Training Scheduler -->
+        <!-- Card 3 · Training Scheduler -->
         <div class="feature-card" id="fc-scheduler">
-          <div class="fc-label">03 — Training</div>
+          <div class="fc-label">03 · Training</div>
           <h3 class="fc-title">AlumnEye ATP. IB-Ready.</h3>
-          <p class="fc-desc">Structured sessions with AlumnEye professionals — DCF, LBO, pitch construction, and mock interviews.</p>
+          <p class="fc-desc">Structured sessions with AlumnEye professionals · DCF, LBO, pitch construction, and mock interviews.</p>
           <div style="position:relative;">
             <div class="week-grid" id="week-grid">
               <div class="day-header">S</div>
@@ -896,17 +901,17 @@
               <div class="day-header">T</div>
               <div class="day-header">F</div>
               <div class="day-header">S</div>
-              <div class="day-cell" data-day="0">—</div>
+              <div class="day-cell" data-day="0">·</div>
               <div class="day-cell" data-day="1">5</div>
               <div class="day-cell" data-day="2">6</div>
               <div class="day-cell" data-day="3">7</div>
               <div class="day-cell" data-day="4">8</div>
               <div class="day-cell" data-day="5">9</div>
-              <div class="day-cell" data-day="6">—</div>
+              <div class="day-cell" data-day="6">·</div>
             </div>
             <div class="sched-cursor" id="sched-cursor"></div>
           </div>
-          <div class="sched-label" id="sched-label" style="font-family:var(--jb);font-size:10px;color:var(--color-text-muted);margin-top:var(--space-3);text-align:center;letter-spacing:.06em;">— Select a session —</div>
+          <div class="sched-label" id="sched-label" style="font-family:var(--jb);font-size:10px;color:var(--color-text-muted);margin-top:var(--space-3);text-align:center;letter-spacing:.06em;">· Select a session ·</div>
         </div>
 
       </div>
@@ -914,7 +919,7 @@
   </section>
 
   <!-- ═══════════════════════════════════════
-       PHILOSOPHY — The Manifesto
+       PHILOSOPHY · The Manifesto
        ═══════════════════════════════════════ -->
   <section class="philosophy-cinema">
     <div class="philosophy-cinema__bg"></div>
@@ -925,7 +930,7 @@
   </section>
 
   <!-- ═══════════════════════════════════════
-       IMMERSIVE SECTIONS — The Scroll Journey
+       IMMERSIVE SECTIONS · The Scroll Journey
        ═══════════════════════════════════════ -->
 
   <!-- 1 · About -->
@@ -937,7 +942,7 @@
         <p class="imm__desc">Every member produces original equity research, defends their thesis under scrutiny, and contributes to a real portfolio. No shortcuts.</p>
         <a href="./pages/about.html" class="btn-magnetic btn-magnetic--gold" style="display:inline-flex;">Our Mission →</a>
       </div>
-      <div class="imm-stat-grid fade-in">
+      <div class="imm-stat-grid">
         <div class="imm-stat-box" style="border:1px solid rgba(255,255,255,0.10);background:rgba(255,255,255,0.04);">
           <div class="imm-stat-num" style="color:var(--eci-gold);">28</div>
           <div class="imm-stat-lbl" style="color:rgba(255,255,255,0.55);">Active Members</div>
@@ -964,7 +969,7 @@
       <div class="fade-in">
         <span class="imm__label" style="color:var(--eci-gold);">The People</span>
         <h2 class="imm__title" style="color:var(--color-text);">28 analysts.<br>5 sector teams.<br>One investment committee.</h2>
-        <p class="imm__desc" style="color:var(--color-text-muted);">TMT/FIG, Energy & Utilities, Defensive, Opportunities — 5 sector teams, each led by a senior member responsible for research quality.</p>
+        <p class="imm__desc" style="color:var(--color-text-muted);">TMT/FIG, Energy & Utilities, Defensive, Opportunities · 5 sector teams, each led by a senior member responsible for research quality.</p>
         <a href="./pages/team.html" class="btn-magnetic btn-magnetic--gold" style="display:inline-flex;">Meet the Team →</a>
       </div>
       <div class="team-photo-grid fade-in">
@@ -984,7 +989,7 @@
       <div class="fade-in">
         <span class="imm__label">Equity Research</span>
         <h2 class="imm__title">Original research.<br>Real recommendations.</h2>
-        <p class="imm__desc">Weeks of fundamental analysis. DCF valuations. Stress-tested in front of the full team. Then a vote — Buy, Sell, or Hold.</p>
+        <p class="imm__desc">Weeks of fundamental analysis. DCF valuations. Stress-tested in front of the full team. Then a vote · Buy, Sell, or Hold.</p>
         <a href="./pages/pitches.html" class="btn-magnetic btn-magnetic--gold" style="display:inline-flex;">View All Pitches →</a>
       </div>
       <div class="pitch-stack fade-in">
@@ -998,7 +1003,7 @@
   </section>
 
   <!-- 4 · Fund -->
-  <section class="imm imm--flip" style="background:oklch(from var(--eci-gold,#c9a84c) 0.94 0.04 83);">
+  <section class="imm imm--flip" style="background:oklch(from var(--eci-gold,#94b8d8) 0.94 0.04 83);">
     <div class="imm__inner">
       <div class="fade-in">
         <span class="imm__label" style="color:var(--eci-navy);">The ECI Fund</span>
@@ -1009,15 +1014,15 @@
       <div class="fade-in">
         <div class="fund-kpi-row">
           <div class="fund-kpi" style="background:rgba(255,255,255,0.5);">
-            <div class="fund-kpi__val" style="color:#16a34a;">+8.00%</div>
+            <div class="fund-kpi__val" style="color:#16a34a;">+6.83%</div>
             <div class="fund-kpi__lbl" style="color:var(--eci-navy);">Cumulative Return</div>
           </div>
           <div class="fund-kpi" style="background:rgba(255,255,255,0.5);">
-            <div class="fund-kpi__val" style="color:var(--eci-navy);">€779.97</div>
+            <div class="fund-kpi__val" style="color:var(--eci-navy);">€802.00</div>
             <div class="fund-kpi__lbl" style="color:var(--eci-navy);">Portfolio NAV</div>
           </div>
           <div class="fund-kpi" style="background:rgba(255,255,255,0.5);">
-            <div class="fund-kpi__val" style="color:#16a34a;">+2.22pp</div>
+            <div class="fund-kpi__val" style="color:#16a34a;">+1.05pp</div>
             <div class="fund-kpi__lbl" style="color:var(--eci-navy);">vs MSCI World</div>
           </div>
           <div class="fund-kpi" style="background:rgba(255,255,255,0.5);">
@@ -1028,13 +1033,13 @@
         <div style="background:rgba(255,255,255,0.55);border-radius:var(--radius-lg);padding:var(--space-5);">
           <div style="font-family:var(--jb);font-size:10px;font-weight:600;color:var(--eci-navy);opacity:0.55;text-transform:uppercase;letter-spacing:.10em;margin-bottom:var(--space-3);">Cumulative Return · Oct 2025 – May 2026</div>
           <svg viewBox="0 0 400 100" preserveAspectRatio="none" style="width:100%;height:72px;">
-            <defs><linearGradient id="fg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#c9a84c" stop-opacity="0.35"/><stop offset="100%" stop-color="#c9a84c" stop-opacity="0"/></linearGradient></defs>
+            <defs><linearGradient id="fg2" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#94b8d8" stop-opacity="0.35"/><stop offset="100%" stop-color="#94b8d8" stop-opacity="0"/></linearGradient></defs>
             <path fill="url(#fg2)" d="M0,50 L57,52 L114,51 L171,53 L228,60 L285,59 L342,43 L400,30 L400,100 L0,100 Z" opacity="0.85"/>
-            <polyline fill="none" stroke="#c9a84c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" points="0,50 57,52 114,51 171,53 228,60 285,59 342,43 400,30"/>
+            <polyline fill="none" stroke="#94b8d8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" points="0,50 57,52 114,51 171,53 228,60 285,59 342,43 400,30"/>
             <polyline fill="none" stroke="rgba(17,61,99,0.3)" stroke-width="1.5" stroke-dasharray="5,4" points="0,52 57,48 114,51 171,47 228,48 285,53 342,49 400,43"/>
           </svg>
           <div style="display:flex;gap:var(--space-5);margin-top:var(--space-2);">
-            <span style="font-family:var(--jb);font-size:10px;font-weight:600;color:var(--eci-navy);opacity:0.6;display:flex;align-items:center;gap:6px;"><span style="width:14px;height:2px;background:#c9a84c;border-radius:2px;display:inline-block;"></span>ECI Fund</span>
+            <span style="font-family:var(--jb);font-size:10px;font-weight:600;color:var(--eci-navy);opacity:0.6;display:flex;align-items:center;gap:6px;"><span style="width:14px;height:2px;background:#94b8d8;border-radius:2px;display:inline-block;"></span>ECI Fund</span>
             <span style="font-family:var(--jb);font-size:10px;font-weight:600;color:var(--eci-navy);opacity:0.6;display:flex;align-items:center;gap:6px;"><span style="width:14px;height:2px;background:rgba(17,61,99,0.35);border-radius:2px;display:inline-block;"></span>MSCI World</span>
           </div>
         </div>
@@ -1048,15 +1053,15 @@
       <div class="fade-in">
         <span class="imm__label">Recruitment</span>
         <h2 class="imm__title">Ready to build your finance career from day one?</h2>
-        <p class="imm__desc">Applications open every September. No prior experience needed — just genuine interest in markets and the drive to produce serious research.</p>
+        <p class="imm__desc">Applications open every September. No prior experience needed · just genuine interest in markets and the drive to produce serious research.</p>
         <div style="display:flex;gap:var(--space-3);flex-wrap:wrap;margin-top:var(--space-6);">
           <a href="./pages/join.html" class="btn-magnetic btn-magnetic--gold" style="display:inline-flex;">Apply to Join</a>
           <a href="./pages/join.html" class="btn-magnetic btn-magnetic--outline" style="display:inline-flex;">Learn More</a>
         </div>
       </div>
       <div class="recruit-steps fade-in">
-        <div class="recruit-step"><div class="recruit-step__num">1</div><div><div class="recruit-step__title">Submit your application</div><div class="recruit-step__desc" style="color:rgba(255,255,255,0.60);">A short motivation letter and your background. We want to understand why markets interest you — not your GPA.</div></div></div>
-        <div class="recruit-step"><div class="recruit-step__num">2</div><div><div class="recruit-step__title">Investment interview</div><div class="recruit-step__desc" style="color:rgba(255,255,255,0.60);">A 20-minute conversation about a stock or market theme of your choice. Preparation matters — curiosity matters more.</div></div></div>
+        <div class="recruit-step"><div class="recruit-step__num">1</div><div><div class="recruit-step__title">Submit your application</div><div class="recruit-step__desc" style="color:rgba(255,255,255,0.60);">A short motivation letter and your background. We want to understand why markets interest you · not your GPA.</div></div></div>
+        <div class="recruit-step"><div class="recruit-step__num">2</div><div><div class="recruit-step__title">Investment interview</div><div class="recruit-step__desc" style="color:rgba(255,255,255,0.60);">A 20-minute conversation about a stock or market theme of your choice. Preparation matters · curiosity matters more.</div></div></div>
         <div class="recruit-step"><div class="recruit-step__num">3</div><div><div class="recruit-step__title">Join your sector team</div><div class="recruit-step__desc" style="color:rgba(255,255,255,0.60);">Assigned to one of 5 research teams. Start producing pitches, attend weekly sessions, and contribute to the fund from week one.</div></div></div>
       </div>
     </div>
@@ -1068,11 +1073,11 @@
       <div class="fade-in">
         <span class="imm__label" style="color:var(--eci-gold);">Official Partner</span>
         <h2 class="imm__title" style="color:var(--color-text);">Training with the best in French finance.</h2>
-        <p class="imm__desc" style="color:var(--color-text-muted);">Exclusive access to AlumnEye's ATP — the benchmark program for IB, PE, and AM recruitment preparation in France.</p>
+        <p class="imm__desc" style="color:var(--color-text-muted);">Exclusive access to AlumnEye's ATP · the benchmark program for IB, PE, and AM recruitment preparation in France.</p>
         <a href="./pages/partners.html" class="btn-magnetic btn-magnetic--gold" style="display:inline-flex;">Partnership Details →</a>
       </div>
       <div class="benefit-grid fade-in">
-        <div class="benefit-box"><div class="benefit-box__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="benefit-box__title">ATP Sessions</div><div class="benefit-box__desc">3 structured sessions covering financial statements, DCF, and pitch construction — led by AlumnEye professionals.</div></div>
+        <div class="benefit-box"><div class="benefit-box__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div class="benefit-box__title">ATP Sessions</div><div class="benefit-box__desc">3 structured sessions covering financial statements, DCF, and pitch construction · led by AlumnEye professionals.</div></div>
         <div class="benefit-box"><div class="benefit-box__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div><div class="benefit-box__title">Financial Modelling</div><div class="benefit-box__desc">Hands-on Excel and modelling workshops guided by professionals from leading investment banks and PE firms.</div></div>
         <div class="benefit-box"><div class="benefit-box__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M20 21a8 8 0 0 0-16 0"/></svg></div><div class="benefit-box__title">Career Mentoring</div><div class="benefit-box__desc">Access to AlumnEye's mentor network for IB / AM / PE recruitment prep, CV review, and mock technical interviews.</div></div>
         <div class="benefit-box"><div class="benefit-box__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div class="benefit-box__title">Alumni Network</div><div class="benefit-box__desc">Direct connections spanning Goldman Sachs, JPMorgan, BNP, Lazard, KKR, and more across France and Europe.</div></div>
@@ -1115,11 +1120,11 @@
 <!-- ── GSAP ── -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="./components.js?v=6"></script>
+<script src="./components.js?v=9"></script>
 
 <script>
 /* ═══════════════════════════════════════
-   ECI DIGITAL INSTRUMENT — Animations
+   ECI DIGITAL INSTRUMENT · Animations
    ═══════════════════════════════════════ */
 
 gsap.registerPlugin(ScrollTrigger);
@@ -1145,26 +1150,10 @@ document.addEventListener('DOMContentLoaded', function() {
     navObserver.observe(heroSection);
   }
 
-  /* ── Stats reveal ── */
-  gsap.from('.stat-cinema', {
-    scrollTrigger: { trigger: '.stats-cinema-section', start: 'top 85%' },
-    y: 30, opacity: 0, duration: 0.7, stagger: 0.09, ease: 'power3.out'
-  });
-
-  /* ── Feature cards reveal ── */
-  gsap.from('.feature-card', {
-    scrollTrigger: { trigger: '.features-cinema', start: 'top 75%' },
-    y: 56, opacity: 0, duration: 0.85, stagger: 0.14, ease: 'power3.out'
-  });
-  gsap.from('.features-header', {
-    scrollTrigger: { trigger: '.features-cinema', start: 'top 80%' },
-    y: 36, opacity: 0, duration: 0.75, ease: 'power3.out'
-  });
-
-  /* ── Philosophy reveal ── */
+  /* ── Philosophy reveal (not .fade-in so GSAP handles it) ── */
   var phil1 = document.getElementById('phil-1');
   var phil2 = document.getElementById('phil-2');
-  if (phil1) {
+  if (phil1 && typeof ScrollTrigger !== 'undefined') {
     ScrollTrigger.create({
       trigger: '.philosophy-cinema',
       start: 'top 70%',
@@ -1175,22 +1164,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  /* ── Immersive sections reveal ── */
-  document.querySelectorAll('.imm').forEach(function(section) {
-    gsap.from(section.querySelectorAll('.fade-in'), {
-      scrollTrigger: { trigger: section, start: 'top 72%' },
-      y: 45, opacity: 0, duration: 0.9, stagger: 0.13, ease: 'power3.out'
-    });
-  });
-
-  /* ── LinkedIn CTA reveal ── */
-  gsap.from('.linkedin-cta__inner > *', {
-    scrollTrigger: { trigger: '.linkedin-cta', start: 'top 75%' },
-    y: 40, opacity: 0, duration: 0.85, stagger: 0.12, ease: 'power3.out'
+  /* ── Refresh ScrollTrigger after full page load ── */
+  window.addEventListener('load', function() {
+    if (typeof ScrollTrigger !== 'undefined') ScrollTrigger.refresh();
   });
 
   /* ─────────────────────────────────────
-     FEATURE CARD 1 — Research Shuffler
+     FEATURE CARD 1 · Research Shuffler
      ───────────────────────────────────── */
   (function() {
     var items = document.querySelectorAll('.shuffler-item');
@@ -1215,7 +1195,7 @@ document.addEventListener('DOMContentLoaded', function() {
   })();
 
   /* ─────────────────────────────────────
-     FEATURE CARD 2 — Portfolio Typewriter
+     FEATURE CARD 2 · Portfolio Typewriter
      ───────────────────────────────────── */
   (function() {
     var output = document.getElementById('typewriter-output');
@@ -1224,9 +1204,9 @@ document.addEventListener('DOMContentLoaded', function() {
       '> NEX (Nexans SA) initiated · BUY',
       '  Unrealized P&L: +€28.20 (+21.36%)',
       '> KO (Coca-Cola) · HOLD confirmed',
-      '> Portfolio NAV: €779.97',
-      '  Cumulative return: +8.00%',
-      '> MSCI World outperf: +2.22pp',
+      '> Portfolio NAV: €802.00',
+      '  Cumulative return: +6.83%',
+      '> MSCI World outperf: +1.05pp',
       '> ATP Session 3 · LBO completed ✓',
     ];
     var msgIdx = 0, charIdx = 0;
@@ -1247,7 +1227,7 @@ document.addEventListener('DOMContentLoaded', function() {
   })();
 
   /* ─────────────────────────────────────
-     FEATURE CARD 3 — Training Scheduler
+     FEATURE CARD 3 · Training Scheduler
      ───────────────────────────────────── */
   (function() {
     var days  = document.querySelectorAll('.day-cell');
