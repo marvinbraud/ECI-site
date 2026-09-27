@@ -50,6 +50,12 @@ const NAV_ITEMS = [
   { label: 'Join Us',        href: 'pages/join.html' },
   { label: 'Contact',        href: 'pages/contact.html' },
 ];
+// Only in the mobile menu (full-height stacked list, room to spare) — the
+// desktop bar is already at 10 items, so these stay reachable via footer there.
+const NAV_ITEMS_MOBILE_EXTRA = [
+  { label: 'Our Strategy',   href: 'pages/strategy.html' },
+  { label: 'Resources',      href: 'pages/resources.html' },
+];
 
 // ── Render Header ──
 function renderHeader() {
@@ -62,7 +68,7 @@ function renderHeader() {
     return `<li><a href="${base}${item.href}"${active ? ` class="${active.trim()}"` : ''}>${item.label}</a></li>`;
   }).join('');
 
-  const mobileLinks = NAV_ITEMS.map(item => {
+  const mobileLinks = NAV_ITEMS.concat(NAV_ITEMS_MOBILE_EXTRA).map(item => {
     const file = item.href.split('/').pop();
     return `<a href="${base}${item.href}">${item.label}</a>`;
   }).join('');
