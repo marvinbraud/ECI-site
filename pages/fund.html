@@ -168,24 +168,24 @@
     <div class="container">
       <div class="kpi-grid fade-in">
         <div class="kpi-card">
-          <div class="kpi-card__value">€802.00</div>
+          <div class="kpi-card__value">€727.05</div>
           <div class="kpi-card__label">Portfolio NAV</div>
-          <div class="kpi-card__sub">as of May 2026</div>
+          <div class="kpi-card__sub">as of 20 Nov 2026</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-card__value positive">+6.83%</div>
+          <div class="kpi-card__value positive">+6.81%</div>
           <div class="kpi-card__label">Cumulative Return</div>
-          <div class="kpi-card__sub">since Oct 2025 inception</div>
+          <div class="kpi-card__sub">since 9 Dec 2025 (first position)</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-card__value positive">+1.05 pp</div>
+          <div class="kpi-card__value negative">−3.12 pp</div>
           <div class="kpi-card__label">vs MSCI World</div>
-          <div class="kpi-card__sub">+6.83% vs +5.78%</div>
+          <div class="kpi-card__sub">+6.81% vs +9.92%</div>
         </div>
         <div class="kpi-card">
-          <div class="kpi-card__value">3</div>
+          <div class="kpi-card__value">4</div>
           <div class="kpi-card__label">Active Positions</div>
-          <div class="kpi-card__sub">NEX · KO · MS</div>
+          <div class="kpi-card__sub">BNP · KO · MS · NEX</div>
         </div>
       </div>
     </div>
@@ -199,14 +199,14 @@
         <!-- Cumulative Return line chart -->
         <div class="chart-card">
           <div class="chart-card__title">Cumulative Return</div>
-          <div class="chart-card__sub">ECI Fund vs MSCI World · indexed from inception (Oct 2025)</div>
+          <div class="chart-card__sub">ECI Fund vs MSCI World · deposit-adjusted, daily · base 0% on 9 Dec 2025</div>
           <canvas id="cumulChart" height="220"></canvas>
         </div>
 
         <!-- Monthly bar chart -->
         <div class="chart-card">
           <div class="chart-card__title">Monthly Returns</div>
-          <div class="chart-card__sub">ECI Fund period return per month</div>
+          <div class="chart-card__sub">ECI Fund period return per month (Nov 2026: to 20 Nov)</div>
           <canvas id="monthlyChart" height="220"></canvas>
         </div>
 
@@ -219,7 +219,7 @@
     <div class="container">
       <div class="chart-card fade-in">
         <div class="chart-card__title">Current Holdings</div>
-        <div class="chart-card__sub">As of May 2026 · EUR/USD: 1.08 (IBKR statement rate) · update monthly</div>
+        <div class="chart-card__sub">As of 20 Nov 2026 · EUR/USD: 1.0970 (market close) · update monthly</div>
         <div style="overflow-x:auto;">
           <table class="holdings-table">
             <thead>
@@ -236,49 +236,59 @@
             </thead>
             <tbody>
               <tr>
-                <td><span class="ticker-chip">NEX</span>Nexans SA</td>
-                <td>1</td>
-                <td>€160.20</td>
-                <td>€160.20</td>
-                <td>€132.00</td>
-                <td class="positive">+€28.20</td>
-                <td class="positive">+21.36%</td>
-                <td>32.00%</td>
-              </tr>
-              <tr>
-                <td><span class="ticker-chip">MS</span>Morgan Stanley</td>
-                <td>1</td>
-                <td>$210.14</td>
-                <td>€194.57</td>
-                <td>€174.79</td>
-                <td class="positive">+€19.78</td>
-                <td class="positive">+11.32%</td>
-                <td>38.86%</td>
+                <td><span class="ticker-chip">BNP</span>BNP Paribas</td>
+                <td>2</td>
+                <td>€89.55</td>
+                <td>€179.10</td>
+                <td>€203.44</td>
+                <td class="negative">−€24.34</td>
+                <td class="negative">−11.96%</td>
+                <td>28.48%</td>
               </tr>
               <tr>
                 <td><span class="ticker-chip">KO</span>Coca-Cola</td>
-                <td>2</td>
-                <td>$78.76</td>
-                <td>€145.85</td>
-                <td>€146.80</td>
-                <td class="negative">−€0.94</td>
-                <td class="negative">−0.64%</td>
-                <td>29.13%</td>
+                <td>2.009</td>
+                <td>$96.99</td>
+                <td>€177.63</td>
+                <td>€135.81</td>
+                <td class="positive">+€41.82</td>
+                <td class="positive">+30.79%</td>
+                <td>28.24%</td>
+              </tr>
+              <tr>
+                <td><span class="ticker-chip">MS</span>Morgan Stanley</td>
+                <td>1.008</td>
+                <td>$165.67</td>
+                <td>€152.17</td>
+                <td>€161.79</td>
+                <td class="negative">−€9.62</td>
+                <td class="negative">−5.94%</td>
+                <td>24.20%</td>
+              </tr>
+              <tr>
+                <td><span class="ticker-chip">NEX</span>Nexans SA</td>
+                <td>1</td>
+                <td>€120.00</td>
+                <td>€120.00</td>
+                <td>€132.00</td>
+                <td class="negative">−€12.00</td>
+                <td class="negative">−9.09%</td>
+                <td>19.08%</td>
               </tr>
               <tr>
                 <td>Total</td>
                 <td>·</td>
                 <td>·</td>
-                <td>€500.62</td>
-                <td>€453.58</td>
-                <td class="positive">+€47.04</td>
-                <td class="positive">+10.37%</td>
+                <td>€628.90</td>
+                <td>€633.04</td>
+                <td class="negative">−€4.14</td>
+                <td class="negative">−0.65%</td>
                 <td>100%</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p class="updated-note">Updated monthly by the ECI team · Cash position: €301.38</p>
+        <p class="updated-note">Share counts per the latest IBKR statement (12 Aug 2026), valued at 20 Nov 2026 closing prices · Cash position: €98.14</p>
       </div>
     </div>
   </section>
@@ -325,7 +335,7 @@
       <div class="text-center mb-12">
         <p class="section-label">Track Record</p>
         <h2 class="section-title" style="margin-inline:auto;">Monthly Performance</h2>
-        <p class="section-desc" style="margin-inline:auto;">Deposit-adjusted returns since inception. Cumulative returns are time-weighted to exclude the effect of capital inflows.</p>
+        <p class="section-desc" style="margin-inline:auto;">Deposit-adjusted returns since the first position (9 Dec 2025). Cumulative returns are time-weighted to exclude the effect of capital inflows.</p>
       </div>
       <div class="chart-card fade-in" style="overflow-x:auto;">
         <table class="perf-table-real">
@@ -340,64 +350,92 @@
           </thead>
           <tbody>
             <tr>
-              <td>Oct 2025</td>
-              <td>·</td>
-              <td>0.00%</td>
-              <td class="negative">−2.10%</td>
-              <td class="positive">+2.10 pp</td>
-            </tr>
-            <tr>
-              <td>Nov 2025</td>
-              <td class="negative">−1.00%</td>
-              <td class="negative">−1.00%</td>
-              <td class="positive">+1.62%</td>
-              <td class="negative">−2.62 pp</td>
-            </tr>
-            <tr>
-              <td>Dec 2025</td>
-              <td class="negative">−0.29%</td>
-              <td class="negative">−1.29%</td>
-              <td class="negative">−1.02%</td>
-              <td class="negative">−0.27 pp</td>
+              <td>Dec 2025 (from 9 Dec)</td>
+              <td class="positive">+1.04%</td>
+              <td class="positive">+1.04%</td>
+              <td class="negative">−0.09%</td>
+              <td class="positive">+1.14 pp</td>
             </tr>
             <tr>
               <td>Jan 2026</td>
-              <td class="negative">−0.93%</td>
-              <td class="negative">−2.21%</td>
-              <td class="positive">+2.14%</td>
-              <td class="negative">−4.35 pp</td>
+              <td class="positive">+0.45%</td>
+              <td class="positive">+1.50%</td>
+              <td class="positive">+0.50%</td>
+              <td class="positive">+1.00 pp</td>
             </tr>
             <tr>
               <td>Feb 2026</td>
-              <td class="negative">−2.24%</td>
-              <td class="negative">−4.40%</td>
-              <td class="positive">+0.71%</td>
-              <td class="negative">−5.11 pp</td>
+              <td class="negative">−4.68%</td>
+              <td class="negative">−3.25%</td>
+              <td class="positive">+1.74%</td>
+              <td class="negative">−4.99 pp</td>
             </tr>
             <tr>
               <td>Mar 2026</td>
-              <td class="positive">+0.43%</td>
-              <td class="negative">−3.99%</td>
-              <td class="negative">−2.81%</td>
-              <td class="negative">−1.18 pp</td>
+              <td class="negative">−2.08%</td>
+              <td class="negative">−5.26%</td>
+              <td class="negative">−3.21%</td>
+              <td class="negative">−2.05 pp</td>
             </tr>
             <tr>
               <td>Apr 2026</td>
-              <td class="positive">+5.85%</td>
-              <td class="positive">+1.63%</td>
-              <td class="positive">+1.17%</td>
-              <td class="positive">+0.46 pp</td>
+              <td class="positive">+16.42%</td>
+              <td class="positive">+10.30%</td>
+              <td class="positive">+4.86%</td>
+              <td class="positive">+5.44 pp</td>
             </tr>
             <tr>
               <td>May 2026</td>
-              <td class="positive">+5.12%</td>
-              <td class="positive">+6.83%</td>
-              <td class="positive">+5.78%</td>
-              <td class="positive">+1.05 pp</td>
+              <td class="positive">+3.29%</td>
+              <td class="positive">+13.93%</td>
+              <td class="positive">+10.52%</td>
+              <td class="positive">+3.41 pp</td>
+            </tr>
+            <tr>
+              <td>Jun 2026</td>
+              <td class="negative">−0.20%</td>
+              <td class="positive">+13.70%</td>
+              <td class="positive">+12.09%</td>
+              <td class="positive">+1.61 pp</td>
+            </tr>
+            <tr>
+              <td>Jul 2026</td>
+              <td class="positive">+1.46%</td>
+              <td class="positive">+15.36%</td>
+              <td class="positive">+11.28%</td>
+              <td class="positive">+4.07 pp</td>
+            </tr>
+            <tr>
+              <td>Aug 2026</td>
+              <td class="negative">−0.47%</td>
+              <td class="positive">+14.81%</td>
+              <td class="positive">+13.57%</td>
+              <td class="positive">+1.25 pp</td>
+            </tr>
+            <tr>
+              <td>Sep 2026</td>
+              <td class="negative">−5.31%</td>
+              <td class="positive">+8.71%</td>
+              <td class="positive">+15.69%</td>
+              <td class="negative">−6.98 pp</td>
+            </tr>
+            <tr>
+              <td>Oct 2026</td>
+              <td class="negative">−2.28%</td>
+              <td class="positive">+6.23%</td>
+              <td class="positive">+16.18%</td>
+              <td class="negative">−9.95 pp</td>
+            </tr>
+            <tr>
+              <td>Nov 2026 (to 20 Nov)</td>
+              <td class="positive">+0.54%</td>
+              <td class="positive">+6.81%</td>
+              <td class="positive">+9.92%</td>
+              <td class="negative">−3.12 pp</td>
             </tr>
           </tbody>
         </table>
-        <p class="updated-note">Benchmark: MSCI World Index (USD, net total return) · ECI returns are deposit-adjusted and time-weighted · FX: EUR/USD 1.08, IBKR statement rate as of May 2026 · Data updated monthly</p>
+        <p class="updated-note">Benchmark: MSCI World (iShares Core MSCI World UCITS ETF, EUR) · ECI returns are deposit-adjusted and time-weighted, net of trading costs and withholding taxes, dividends included · Prices: daily closes, USD positions converted at daily EUR/USD · Data updated monthly</p>
       </div>
     </div>
   </section>
@@ -416,7 +454,7 @@
   <section style="padding:var(--space-8) 0;border-top:1px solid var(--color-border);">
     <div class="container" style="max-width:var(--content-default);">
       <p style="font-size:var(--text-xs);color:var(--color-text-muted);line-height:1.7;">
-        <strong>Important information.</strong> The ECI Fund is a student-managed educational portfolio operated by ESSEC Capital Investments, a student association at ESSEC Business School. It is not a regulated investment vehicle, is not open to outside investors, and nothing on this page constitutes investment advice, a recommendation, or an offer to buy or sell any security. Past performance is not indicative of future results. Returns are calculated internally on a deposit-adjusted, time-weighted basis and have not been independently audited. Benchmark data: MSCI World Index (USD, net total return).
+        <strong>Important information.</strong> The ECI Fund is a student-managed educational portfolio operated by ESSEC Capital Investments, a student association at ESSEC Business School. It is not a regulated investment vehicle, is not open to outside investors, and nothing on this page constitutes investment advice, a recommendation, or an offer to buy or sell any security. Past performance is not indicative of future results. Returns are calculated internally on a deposit-adjusted, time-weighted basis and have not been independently audited. Benchmark data: MSCI World (iShares Core MSCI World UCITS ETF, EUR).
       </p>
     </div>
   </section>
@@ -436,68 +474,37 @@
 </main>
 <div id="footer-slot"></div>
 <script src="../components.js?v=9"></script>
+<script src="../fund-data.js?v=1"></script>
 <script>
-/* ═══════════════════════════════════════════════
-   ECI FUND DASHBOARD · DATA
-   Update this block each month end.
-   Add a new entry to each array in chronological order.
-   ═══════════════════════════════════════════════ */
-const FUND_DATA = {
-  labels: ['Oct 2025','Nov 2025','Dec 2025','Jan 2026','Feb 2026','Mar 2026','Apr 2026','May 2026'],
-
-  // Deposit-adjusted cumulative returns (%) · ECI Fund
-  eciCumulative: [0.00, -1.00, -1.29, -2.21, -4.40, -3.99, 1.63, 6.83],
-
-  // MSCI World cumulative (%) · computed from monthly period returns
-  msciCumulative: [-2.10, 1.62, -1.02, 2.14, 0.71, -2.81, 1.17, 5.78],
-
-  // ECI monthly period returns (%)
-  eciMonthly: [0.00, -1.00, -0.29, -0.93, -2.24, 0.43, 5.85, 5.12]
-};
-
-/* ── Shared chart theme ── */
+/* Fund dashboard · data lives in ../fund-data.js (regenerated each month end) */
 const ROOT = getComputedStyle(document.documentElement);
 const C_ACCENT  = '#5e7c9e';
 const C_MUTED   = 'rgba(120,130,150,0.7)';
 const C_GRID    = 'rgba(150,160,170,0.12)';
 const C_TEXT    = ROOT.getPropertyValue('--color-text-muted').trim() || '#888';
 const FONT      = "'Satoshi', 'Inter', sans-serif";
+const MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+const pct = v => (v > 0 ? '+' : '') + v.toFixed(2) + '%';
+const fmtDate = s => { const [y,m,d] = s.split('-'); return +d + ' ' + MON[+m-1] + ' ' + y; };
 
 Chart.defaults.font.family = FONT;
 Chart.defaults.font.size   = 11;
 Chart.defaults.color       = C_TEXT;
 
-/* ── 1. Cumulative Return Line Chart ── */
+/* ── 1. Cumulative Return Line Chart (daily) ── */
 new Chart(document.getElementById('cumulChart'), {
   type: 'line',
   data: {
-    labels: FUND_DATA.labels,
+    labels: FUND_DATA.dates,
     datasets: [
-      {
-        label: 'ECI Fund',
-        data: FUND_DATA.eciCumulative,
-        borderColor: C_ACCENT,
-        backgroundColor: 'rgba(201,168,76,0.08)',
-        borderWidth: 2.5,
-        pointRadius: 4,
-        pointHoverRadius: 6,
-        pointBackgroundColor: C_ACCENT,
-        fill: true,
-        tension: 0.3
-      },
-      {
-        label: 'MSCI World',
-        data: FUND_DATA.msciCumulative,
-        borderColor: C_MUTED,
-        backgroundColor: 'transparent',
-        borderWidth: 1.5,
-        borderDash: [5, 4],
-        pointRadius: 3,
-        pointHoverRadius: 5,
-        pointBackgroundColor: C_MUTED,
-        fill: false,
-        tension: 0.3
-      }
+      { label: 'ECI Fund', data: FUND_DATA.eci, borderColor: C_ACCENT,
+        backgroundColor: 'rgba(94,124,158,0.10)', borderWidth: 2.2,
+        pointRadius: 0, pointHoverRadius: 5, pointBackgroundColor: C_ACCENT,
+        fill: 'origin', tension: 0.15 },
+      { label: 'MSCI World', data: FUND_DATA.msci, borderColor: C_MUTED,
+        backgroundColor: 'transparent', borderWidth: 1.6, borderDash: [5, 4],
+        pointRadius: 0, pointHoverRadius: 4, pointBackgroundColor: C_MUTED,
+        fill: false, tension: 0.15 }
     ]
   },
   options: {
@@ -505,32 +512,39 @@ new Chart(document.getElementById('cumulChart'), {
     interaction: { mode: 'index', intersect: false },
     plugins: {
       legend: { position: 'top', labels: { boxWidth: 12, padding: 16 } },
-      tooltip: {
-        callbacks: {
-          label: ctx => ` ${ctx.dataset.label}: ${ctx.parsed.y > 0 ? '+' : ''}${ctx.parsed.y.toFixed(2)}%`
-        }
-      }
+      tooltip: { callbacks: {
+        title: items => fmtDate(items[0].label),
+        label: ctx => ` ${ctx.dataset.label}: ${pct(ctx.parsed.y)}`
+      } }
     },
     scales: {
-      x: { grid: { color: C_GRID }, ticks: { maxRotation: 30 } },
-      y: {
-        grid: { color: C_GRID },
-        ticks: { callback: v => (v > 0 ? '+' : '') + v.toFixed(1) + '%' }
-      }
+      x: { grid: { display: false },
+           ticks: { autoSkip: false, maxRotation: 0,
+             callback(val, i) {
+               const d = this.getLabelForValue(val);
+               const prev = i > 0 ? this.getLabelForValue(val - 1) : '';
+               const m = +d.slice(5, 7);
+               if (i === 0 || (d.slice(0, 7) !== prev.slice(0, 7) && m % 2 === 1))
+                 return MON[m-1] + " '" + d.slice(2, 4);
+               return '';
+             } } },
+      y: { grid: { color: C_GRID },
+           ticks: { callback: v => (v > 0 ? '+' : '') + v.toFixed(0) + '%' } }
     }
   }
 });
 
 /* ── 2. Monthly Returns Bar Chart ── */
+const MONTHLY = FUND_DATA.months.map(m => m.period);
 new Chart(document.getElementById('monthlyChart'), {
   type: 'bar',
   data: {
-    labels: FUND_DATA.labels,
+    labels: FUND_DATA.months.map(m => m.label.replace(' 20', " '")),
     datasets: [{
       label: 'Monthly Return',
-      data: FUND_DATA.eciMonthly,
-      backgroundColor: FUND_DATA.eciMonthly.map(v => v >= 0 ? 'rgba(22,163,74,0.75)' : 'rgba(220,38,38,0.7)'),
-      borderColor:     FUND_DATA.eciMonthly.map(v => v >= 0 ? '#16a34a' : '#dc2626'),
+      data: MONTHLY,
+      backgroundColor: MONTHLY.map(v => v >= 0 ? 'rgba(22,163,74,0.75)' : 'rgba(220,38,38,0.7)'),
+      borderColor:     MONTHLY.map(v => v >= 0 ? '#16a34a' : '#dc2626'),
       borderWidth: 1.5,
       borderRadius: 4
     }]
@@ -539,18 +553,12 @@ new Chart(document.getElementById('monthlyChart'), {
     responsive: true,
     plugins: {
       legend: { display: false },
-      tooltip: {
-        callbacks: {
-          label: ctx => ` ${ctx.parsed.y > 0 ? '+' : ''}${ctx.parsed.y.toFixed(2)}%`
-        }
-      }
+      tooltip: { callbacks: { label: ctx => ' ' + pct(ctx.parsed.y) } }
     },
     scales: {
-      x: { grid: { display: false }, ticks: { maxRotation: 30 } },
-      y: {
-        grid: { color: C_GRID },
-        ticks: { callback: v => (v > 0 ? '+' : '') + v.toFixed(1) + '%' }
-      }
+      x: { grid: { display: false }, ticks: { maxRotation: 45 } },
+      y: { grid: { color: C_GRID },
+           ticks: { callback: v => (v > 0 ? '+' : '') + v.toFixed(0) + '%' } }
     }
   }
 });
